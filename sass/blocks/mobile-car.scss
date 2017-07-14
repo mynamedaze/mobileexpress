@@ -1,0 +1,8 @@
+.mobile-car {
+  background-color: green;
+}
+.mobile-car__wrapper {
+  @include section-width;
+  @include paddings;
+  background-color: burlywood;
+}
