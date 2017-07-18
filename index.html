@@ -15,7 +15,6 @@
 <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="/js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="/js/jquery.inputmask.bundle.js"></script>
-<script type="text/javascript" src="/js/main.js"></script>
 
 <body>
   <header class="page-header">
@@ -42,18 +41,24 @@
       <h1 class="intro__title">Замена дисплея iPhone в Тюмени</h1>
       <span class="intro__description">Мы помогаем нашим клиентам быстро возвращать к жизни любимые гаджеты, даже если другие не смогли помочь</span>
       <div class="intro__utp-list  owl-carousel  owl-theme">
-        <div class="intro__utp-item"><span class="intro__utp-item-text  intro__utp-item-text--1">111</span>
+        <div class="intro__utp-item"><span class="intro__utp-item-text  intro__utp-item-text--1"><strong class="intro__utp-item-title">Срок ремонта</strong><br>от 5 минут</span>
         </div>
-        <div class="intro__utp-item"><span class="intro__utp-item-text  intro__utp-item-text--2">222</span></span>
+        <div class="intro__utp-item"><span class="intro__utp-item-text  intro__utp-item-text--2"><strong class="intro__utp-item-title">Гарантия</strong><br>от 30 до 90 дней</span>
         </div>
-        <div class="intro__utp-item"><span class="intro__utp-item-text  intro__utp-item-text--3">333</span></span>
+        <div class="intro__utp-item"><span class="intro__utp-item-text  intro__utp-item-text--3"><strong class="intro__utp-item-title">Оригинальные запчасти в наличии</strong><br>или предоставим копию высокого качества</span>
         </div>
       </div>
       <span class="intro__request-txt">Оставьте заявку и наш менеджер быстро Вас проконсультирует</span>
+      <form action="mail.php" method="post" class="intro__form-field  intro__form-field--mobile  this_is_my_lead_form  form_lead_stt"
+        id="form-1" name="call-master">
+        <input type="tel" class="intro__form-input  intro__form-input--info  phone_lead_stt" name="uphone" id="telephone-field" placeholder="Телефон"
+          required>
+        <input type="submit" class="intro__form-input  intro__form-input--submit" name="callback-submit" value="Консультация">
+      </form>
+      <div class="intro__call-button-field">
+        <button class="intro__call-button">Консультация</button>
+      </div>
     </div>
-    <form action="#" method="POST" class="intro__callback-form">
-
-    </form>
   </section>
   <section class="mobile-car">
     <div class="mobile-car__wrapper">
@@ -61,14 +66,95 @@
       <div class="mobile-car__text-field">
         <h1 class="mobile-car__title">Выездной ремонт iPhone и iPad</h1>
         <ul class="mobile-car__list">
-          <li class="mobile-car__item">К вам приедет <strong>наш мастер</strong>, а не школьник-самоучка</li>
-          <li class="mobile-car__item">Среднее время прибытия мастера <strong>30 минут</strong></li>
-          <li class="mobile-car__item">Среднее время ремонта на выезде <strong>35 минут</strong></li>
+          <li class="mobile-car__item  mobile-car__item--1">К вам приедет <strong>наш мастер</strong>, а не школьник-самоучка</li>
+          <li class="mobile-car__item  mobile-car__item--2">Среднее время прибытия мастера <strong>30 минут</strong></li>
+          <li class="mobile-car__item  mobile-car__item--3">Среднее время ремонта на выезде <strong>35 минут</strong></li>
         </ul>
-        <form action="#" class="mobile-car__callback-form"></form>
+        <div class="mobile-car__call-button-field">
+          <button class="mobile-car__call-button">Вызвать мастера</button>
+        </div>
       </div>
     </div>
   </section>
+  <section class="device-model" id="cost-y">
+    <div class="device-model__wrapper">
+      <h2 class="device-model__title">Стоимость ремонта</h2>
+      <div class="device-model__toggle">
+        <button class="device-model__button  device-model__button--iphone  device-model__button--active">iPhone</button>
+        <button class="device-model__button  device-model__button--ipad">iPad</button>
+      </div>
+      <ul class="device-model__model-list  device-model__model-list--phone">
+        <li class="device-model__model-item  device-model__model-item--phone  device-model__model-item--active"><span class="device-model__model-number">4</span></li>
+        <li class="device-model__model-item  device-model__model-item--phone"><span class="device-model__model-number">4S</span></li>
+        <li class="device-model__model-item  device-model__model-item--phone"><span class="device-model__model-number">5</span></li>
+        <li class="device-model__model-item  device-model__model-item--phone"><span class="device-model__model-number">5C</span></li>
+        <li class="device-model__model-item  device-model__model-item--phone"><span class="device-model__model-number">5S</span></li>
+        <li class="device-model__model-item  device-model__model-item--phone"><span class="device-model__model-number">SE</span></li>
+        <li class="device-model__model-item  device-model__model-item--phone"><span class="device-model__model-number">6</span></li>
+        <li class="device-model__model-item  device-model__model-item--phone"><span class="device-model__model-number">6Plus</span></li>
+        <li class="device-model__model-item  device-model__model-item--phone"><span class="device-model__model-number">6S</span></li>
+        <li class="device-model__model-item  device-model__model-item--phone"><span class="device-model__model-number">6SPlus</span></li>
+        <li class="device-model__model-item  device-model__model-item--phone"><span class="device-model__model-number">7</span></li>
+        <li class="device-model__model-item  device-model__model-item--phone"><span class="device-model__model-number">7+</span></li>
+      </ul>
+      <ul class="device-model__model-list  device-model__model-list--pad disable">
+        <li class="device-model__model-item  device-model__model-item--pad  device-model__model-item--active"><span class="device-model__model-number">2</span></li>
+        <li class="device-model__model-item  device-model__model-item--pad"><span class="device-model__model-number">3</span></li>
+        <li class="device-model__model-item  device-model__model-item--pad"><span class="device-model__model-number">4</span></li>
+        <li class="device-model__model-item  device-model__model-item--pad"><span class="device-model__model-number">Air</span></li>
+        <li class="device-model__model-item  device-model__model-item--pad"><span class="device-model__model-number">Air 2</span></li>
+        <li class="device-model__model-item  device-model__model-item--pad"><span class="device-model__model-number">mini</span></li>
+        <li class="device-model__model-item  device-model__model-item--pad"><span class="device-model__model-number">mini 2</span></li>
+        <li class="device-model__model-item  device-model__model-item--pad"><span class="device-model__model-number">mini 3</span></li>
+        <li class="device-model__model-item  device-model__model-item--pad"><span class="device-model__model-number">mini 4</span></li>
+      </ul>
+      <div class="device-model__break-mainlist  device-model__break-mainlist--phone">
+        <ul class="device-model__break-list  device-model__break-list--phone">
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Ремонт экрана</span><span class="device-model__break-type-cost">800 - 1500<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена аккумулятора</span><span class="device-model__break-type-cost">1990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена стекла</span><span class="device-model__break-type-cost">1890<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена корпуса</span><span class="device-model__break-type-cost">2890<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена разъема</span><span class="device-model__break-type-cost">1490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена микрофона</span><span class="device-model__break-type-cost">1490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена динамика, камеры</span><span class="device-model__break-type-cost">1490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена модуля</span><span class="device-model__break-type-cost">1490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена платы</span><span class="device-model__break-type-cost">1890<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена клавиатуры</span><span class="device-model__break-type-cost">1990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа</span><span class="device-model__break-type-cost">1890<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена АКБ</span><span class="device-model__break-type-cost">1890<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена кнопки Home</span><span class="device-model__break-type-cost">1890<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена кнопки ON/OFF</span><span class="device-model__break-type-cost">1890<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена задней крышки</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Ремонт цепи питания</span><span class="device-model__break-type-cost">400<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Ремонт шлейфа</span><span class="device-model__break-type-cost">от 4000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Ремонт антенного блока</span><span class="device-model__break-type-cost">0<span class="device-model__break-rubl"> руб.</span></span></a></li>
+        </ul>
+      </div>
+      <div class="device-model__break-mainlist  device-model__break-mainlist--pad  disable">
+        <ul class="device-model__break-list  device-model__break-list--pad">
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена стекла (Touch Screen)</span><span class="device-model__break-type-cost">2400</span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена аккумулятора</span><span class="device-model__break-type-cost">4200</span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена дисплея (нет изображения)</span><span class="device-model__break-type-cost">7250</span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правки корпуса (доп. услуга)</span><span class="device-model__break-type-cost">1500</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="credit">
+    <div class="credit__wrapper">
+      <h2 class="credit__title visually-hidden">Ремонт телефона в кредит</h2>
+      <a href="#" class="credit__title-link">Возможна починка телефона в кредит</a>
+      <strong class="credit__strong">Не нашли свою поломку?</strong>
+      <span class="credit__description">Мы чиним более 100 видов поломок. Оставьте номер телефона - мы позвоним и проконсультируем Вас совершенно бесплатно!</span>
+      <form action="mail.php" method="post" class="credit__form-field  credit__form-field--mobile  this_is_my_lead_form  form_lead_stt"
+        id="form-2" name="call-master">
+        <input type="tel" class="credit__form-input  credit__form-input--info  phone_lead_stt" name="uphone" id="telephone-field" placeholder="Телефон"
+          required>
+        <input type="submit" class="credit__form-input  credit__form-input--submit" name="callback-submit" value="Я не нашел поломку">
+      </form>
+    </div>
+  </section>
+  <script type="text/javascript" src="/js/main.js"></script>
 </body>
 
 </html>
