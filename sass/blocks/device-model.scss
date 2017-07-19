@@ -6,9 +6,10 @@
   box-sizing: border-box;
   @include section-width;
   @include paddings;
+  text-align: center;
   @media #{$max-mobile-width} {
     padding-top: 13px;
-    padding-bottom: 63px;
+    padding-bottom: 30px;
   }
   @media #{$min-tablet-width} {
     padding-top: 2px;
@@ -16,12 +17,14 @@
   }
   @media #{$min-desktop-width} {
     padding-top: 4px;
-    padding-bottom: 80px;
+    padding-bottom: 35px;
   }
 }
 .device-model__title {
   text-align: center;
-  font-weight: 700;
+  position: relative;
+  font-weight: 100;
+  position: relative;
   @media #{$max-mobile-width} {
     font-size: 2.6rem;
     line-height: 28px;
@@ -30,62 +33,92 @@
   }
   @media #{$min-tablet-width} {
     font-size: 2.7rem;
-    width: 440px;
     margin-bottom: 12px;
+    @include centers;
+    width: 220px;
   }
   @media #{$min-desktop-width} {
     font-size: 4.8rem;
-    width: 780px;
+    width: 380px;
     margin-bottom: 16px;
   }
 }
+.device-model__title::after {
+  position: absolute;
+  content: "";
+  @media #{$max-mobile-width} {
+    left: 50%;
+    transform: translateX(-35px);
+    width: 70px;
+    background-color: $button-border-color;
+    height: 2px;
+    bottom: -17px;
+  }
+  @media #{$min-tablet-width} {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+background: -moz-linear-gradient(left, rgba(254,180,0,1) 0%, rgba(250,243,7,0) 100%);
+background: -webkit-linear-gradient(left, rgba(254,180,0,1) 0%,rgba(250,243,7,0) 100%);
+background: linear-gradient(to right, rgba(254,180,0,1) 0%,rgba(250,243,7,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feb400', endColorstr='#00faf307',GradientType=1 );
+  }
+  @media #{$min-desktop-width} {
+    height: 3px;
+  }
+}
 .device-model__toggle {
-  position: relative;
+  display: flex;
   box-sizing: border-box;
+  @include centers;
   @media #{$max-mobile-width} {
     margin-top: 34px;
-    width: 184px;
-    height: 4.8rem;
-    border-radius: 4.8rem;
+    max-width: 188px;
+    height: 4.2rem;
   }
   @media #{$min-tablet-width} {
     margin-top: 18px;
-    width: 160px;
-    height: 4.2rem;
-    border-radius: 4.2rem;
+    width: 112px;
+    height: 2.8rem;
   }
   @media #{$min-desktop-width} {
     margin-top: 30px;
-    width: 234px;
-    height: 6.2rem;
-    border-radius: 6.2rem;
+    width: 242px;
+    height: 5.6rem;
   }
 }
 .device-model__button {
-  position: absolute;
+  box-sizing: border-box;
+  outline-width: 0;
+  background-color: $toggle-color;
+  border: 1px solid $toggle-border;
   @media #{$max-mobile-width} {
     width: 94px;
     height: 4.2rem;
-    border-radius: 4.2rem;
-    font-size: 1.7rem;
-    font-weight: 700;
+    font-size: 1.8rem;
+    border-radius: 3px;
   }
   @media #{$min-tablet-width} {
-    width: 83px;
-    height: 3.8rem;
-    border-radius: 3.8rem;
+    width: 56px;
+    height: 2.8rem;
     font-size: 1.4rem;
-    font-weight: 600;
+    border-radius: 3px;
   }
     @media #{$min-desktop-width} {
     width: 121px;
     height: 5.6rem;
-    border-radius: 5.6rem;
     font-size: 1.9rem;
+    border-radius: 4px;
   }
 }
 .device-model__button--active {
+  @include gradient-btn;
+  border: 1px solid $button-border-color;
   z-index: 2;
+}
+.device-model__button--active:focus {
+  border: 1px solid $button-border-color;
 }
 .device-model__button--iphone {
   top: 0;
@@ -113,47 +146,50 @@
   }
 }
 .device-model__model-item {
-  transition: background-color 0.2s ease;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   text-align: center;
   cursor: pointer;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: $links-color;
   @media #{$max-mobile-width} {
-    height: 33px;
-    border-radius: 33px;
+    height: 25px;
     min-width: 13px;
+    border-radius: 2px;
     margin-right: 6px;
   }
   @media #{$min-tablet-width} {
-    height: 25px;
-    border-radius: 25px;
+    height: 20px;
     min-width: 7px;
+    border-radius: 2px;
     margin-right: 6px;
   }
   @media #{$min-desktop-width} {
-    height: 43px;
+    height: 35px;
     min-width: 27px;
-    border-radius: 43px;
+    border-radius: 4px;
     margin-right: 15px;
-
   }
 }
 .device-model__model-item:last-child {
   margin-right: 0;
 }
+.device-model__model-item--active {
+  color: $active-device;
+  border: 1px solid $active-device;
+}
 .device-model__model-number {
   @media #{$max-mobile-width} {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
   @media #{$min-tablet-width} {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   @media #{$min-desktop-width} {
-    font-size: 2.4rem;
+    font-size: 1.9rem;
   }
 }
 .device-model__break-list {
@@ -165,10 +201,13 @@
     margin-top: 7px;
     margin-left: -10px;
     margin-right: -10px;
+    margin-bottom: 20px;
   }
 }
 .device-model__break-item {
   margin-top: -1px;
+  border-bottom: 1px solid $device-border;
+  border-top: 1px solid $device-border;
   @media #{$max-mobile-width} {
     width: 100%;
   }
@@ -181,33 +220,36 @@
     margin-left: -1px;
   }
 }
+.device-model__break-item--mobile {
+  @media #{$max-mobile-width} {
+    display: none;
+  }
+}
 .device-model__break-link {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
+  color: #000000;
   @media #{$max-mobile-width} {
     font-size: 1.7rem;
     padding: 13px 24px 12px 11px;
   }
   @media #{$min-tablet-width} {
     font-size: 1.4rem;
-    font-weight: 300;
     padding: 8px 13px 6px 9px;
   }
   @media #{$min-desktop-width} {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     padding: 17px 23px 17px 15px;
   }
 }
 .device-model__break-text {
   @media #{$min-tablet-width} {
-    font-weight: 300;
   }
 }
 .device-model__break-type-cost {
   flex-shrink: 0;
   position: relative;
-  font-weight: 700;
 }
 .device-model__break-type-cost::after {
   position: absolute;
@@ -236,15 +278,17 @@
     right: -9px;
   }
 }
-.device-model__adaptive-text {
-  @media #{$max-mobile-width} {
-    display: none;
-  }
+.device-model__break-rubl {
+  color: $rubl-color;
 }
-.device-model__tel-number {
-  white-space: nowrap;
+.device-model__see-more {
+  @media #{$max-mobile-width} {
+    color: $links-color;
+    font-size: 1.8rem;
+    text-decoration: underline;
+  }
   @media #{$min-tablet-width} {
-    font-weight: 700;
+    display: none;
   }
 }
 .disable {

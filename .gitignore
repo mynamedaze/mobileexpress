@@ -1,5 +1,6 @@
 node_modules/
 build/
+video/
 .vscode/
 .DS_Store
 Thumbs.db

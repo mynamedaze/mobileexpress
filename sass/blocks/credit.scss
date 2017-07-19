@@ -5,12 +5,25 @@
 .credit__wrapper {
   @include section-width;
   @include paddings;
+  @media #{$max-mobile-width} {
+    padding-top: 17px;
+    padding-bottom: 56px;
+  }
+  @media #{$min-tablet-width} {
+    padding-top: 12px;
+    padding-bottom: 32px;
+  }
+  @media #{$min-desktop-width} {
+    padding-bottom: 71px;
+  }
 }
 .credit__title-link {
   color: $links-color;
   display: block;
+  text-align: center;
   @media #{$max-mobile-width} {
     font-size: 1.8rem;
+    margin-bottom: 33px;
   }
   @media #{$min-tablet-width} {
     font-size: 1.4rem;
@@ -23,23 +36,89 @@
   @media #{$max-mobile-width} {
     font-size: 1.8rem;
     display: block;
+    text-align: center;
   }
   @media #{$min-tablet-width} {
     font-weight: 400;
     font-size: 1.4rem;
+    display: none;
   }
   @media #{$min-desktop-width} {
     font-size: 1.9rem;
   }
 }
 .credit__description {
+  text-align: center;
   @media #{$max-mobile-width} {
     font-size: 1.8rem;
+    line-height: 2.6rem;
+    margin-top: 3px;
   }
   @media #{$min-tablet-width} {
     font-size: 1.4rem;
+    margin-top: 16px;
   }
   @media #{$min-desktop-width} {
     font-size: 1.9rem;
+    margin-top: 33px;
+    line-height: 2.6rem;
   }
+}
+.credit__form-field {
+  box-sizing: border-box;
+  display: flex;
+  @include centers;
+  @media #{$max-mobile-width} {
+    flex-direction: column;
+    max-width: 186px;
+    margin-top: 38px;
+  }
+  @media #{$min-tablet-width} {
+    width: 310px;
+    justify-content: space-between;
+    margin-top: 19px;
+  }
+  @media #{$min-desktop-width} {
+    width: 438px;
+    margin-top: 34px;
+  }
+}
+.credit__form-input {
+  @media #{$max-mobile-width} {
+    font-size: 1.8rem;
+    width: 100%;
+    min-height: 4rem;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 1.4rem;
+    width: 140px;
+    min-height: 2.8rem;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 1.9rem;
+    width: 200px;
+    min-height: 4.2rem;
+  }
+}
+.credit__form-input--info {
+  border: 1px solid $credit-border;
+  color: $credit-border;
+}
+.credit__form-input--info::-moz-placeholder {
+  color: $credit-border;
+}
+.credit__form-input--info::-webkit-input-placeholder {
+  color: $credit-border;
+}
+.credit__form-input--info:focus {
+  border: 1px solid $button-border-color;
+}
+.credit__form-input--submit {
+  border: 1px solid $button-border-color;
+  @media #{$max-mobile-width} {
+    margin-top: 14px;
+  }
+}
+.credit__form-input--submit:focus {
+  border: 1px solid $button-border-color;
 }

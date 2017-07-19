@@ -1,5 +1,4 @@
 .main-nav {
-  background-color: blue;
   box-sizing: border-box;
   @media #{$max-mobile-width} {
     display: none;
@@ -13,7 +12,6 @@
 .main-nav__list {
   margin-top: 0;
   margin-bottom: 0;
-  background-color: oldlace;
   display: flex;
   padding-left: 0;
   box-sizing: border-box;
@@ -32,5 +30,4 @@
 }
 .main-nav__item-link {
   color: $text-main-color;
-  background-color: red;
 }

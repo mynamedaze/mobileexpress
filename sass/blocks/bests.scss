@@ -1,0 +1,394 @@
+.bests {
+  width: 100%;
+  background-color: green;
+  box-sizing: border-box;
+}
+.bests__wrapper {
+  @include section-width;
+  @include paddings;
+  background-color: lightgreen;
+}
+.bests__arrow {
+  @media #{$max-mobile-width} {
+    display: none;
+  }
+  @media #{$min-tablet-width} {
+    top: 50%;
+    transform: translateY(-15px);
+    position: absolute;
+    width: 30px;
+    height: 30px;
+  }
+}
+.bests__arrow--left {
+  @media #{$min-tablet-width} {
+    z-index: 10;
+    left: 0;
+  }
+}
+.bests__arrow--right {
+  @media #{$min-tablet-width} {
+    right: 0;
+  }
+}
+.bests__slider {
+  background-color: red;
+  position: relative;
+  @media #{$max-mobile-width} {
+    width: 100%;
+  }
+  @media #{$min-tablet-width} {
+    overflow: hidden;
+    width: 700px;
+    @include centers;
+  }
+}
+.bests__list {
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  @media #{$max-mobile-width} {
+    flex-wrap: wrap;
+  }
+  @media #{$min-tablet-width} {
+    flex-wrap: nowrap;
+  }
+}
+.bests__item {
+  background-color: lightcyan;
+  box-sizing: border-box;
+  @media #{$max-mobile-width} {
+    width: 45%;
+    min-height: 4rem;
+    margin-bottom: 5px;
+  }
+  @media #{$min-tablet-width} {
+    transition: transform ease-in-out 0.3s;
+    width: 140px;
+    height: 200px;
+    flex-shrink: 0;
+  }
+}
+/* css подготовка для кастомного слайдера */
+.bests__list--1 .bests__item--1 {
+  @media #{$min-tablet-width} {
+    background-color: lavender;
+  }
+}
+.bests__list--1 .bests__item--2 {
+  @media #{$min-tablet-width} {
+    background-color: lemonchiffon;
+  }
+}
+.bests__list--1 .bests__item--3 {
+  @media #{$min-tablet-width} {
+    background-color: lightgray;
+    transform: translateX(100%);
+  }
+}
+.bests__list--1 .bests__item--4 {
+  @media #{$min-tablet-width} {
+    background-color: lightcoral;
+    transform: translateX(100%);
+  }
+}
+.bests__list--1 .bests__item--5 {
+  @media #{$min-tablet-width} {
+    background-color: lightskyblue;
+    transform: translateX(100%);
+  }
+}
+.bests__list--1 .bests__item--6 {
+  @media #{$min-tablet-width} {
+    background-color: lightsteelblue;
+    transform: translateX(100%);
+  }
+}
+.bests__list--1 .bests__item--7 {
+  @media #{$min-tablet-width} {
+    background-color: lightseagreen;
+    transform: translateX(100%);
+  }
+}
+.bests__list--1 .bests__item--8 {
+  @media #{$min-tablet-width} {
+    background-color: lightslategrey;
+    transform: translateX(100%);
+  }
+}
+.bests__list--1 .bests__item--9 {
+  @media #{$min-tablet-width} {
+    background-color: lightyellow;
+    transform: translateX(100%);
+  }
+}
+
+.bests__list--2 .bests__item--1 {
+  @media #{$min-tablet-width} {
+    background-color: lavender;
+    transform: translateX(-100%);
+  }
+}
+.bests__list--2 .bests__item--2 {
+  @media #{$min-tablet-width} {
+    background-color: lemonchiffon;
+    transform: translateX(-100%);
+  }
+}
+.bests__list--2 .bests__item--3 {
+  @media #{$min-tablet-width} {
+    background-color: lightgray;
+    transform: translateX(-100%);
+  }
+}
+.bests__list--2 .bests__item--4 {
+  @media #{$min-tablet-width} {
+    background-color: lightcoral;
+  }
+}
+.bests__list--2 .bests__item--5 {
+  @media #{$min-tablet-width} {
+    background-color: lightskyblue;
+  }
+}
+.bests__list--2 .bests__item--6 {
+  @media #{$min-tablet-width} {
+    background-color: lightsteelblue;
+  }
+}
+.bests__list--2 .bests__item--7 {
+  @media #{$min-tablet-width} {
+    background-color: lightseagreen;
+  }
+}
+.bests__list--2 .bests__item--8 {
+  @media #{$min-tablet-width} {
+    background-color: lightslategrey;
+  }
+}
+.bests__list--2 .bests__item--9 {
+  @media #{$min-tablet-width} {
+    background-color: lightyellow;
+  }
+}
+
+.bests__list--3 .bests__item--1 {
+  @media #{$min-tablet-width} {
+    background-color: lavender;
+    transform: translateX(-200%);
+  }
+}
+.bests__list--3 .bests__item--2 {
+  @media #{$min-tablet-width} {
+    background-color: lemonchiffon;
+    transform: translateX(-200%);
+  }
+}
+.bests__list--3 .bests__item--3 {
+  @media #{$min-tablet-width} {
+    background-color: lightgray;
+    transform: translateX(-200%);
+  }
+}
+.bests__list--3 .bests__item--4 {
+  @media #{$min-tablet-width} {
+    background-color: lightcoral;
+    transform: translateX(-200%);
+  }
+}
+.bests__list--3 .bests__item--5 {
+  @media #{$min-tablet-width} {
+    background-color: lightskyblue;
+    transform: translateX(-100%);
+  }
+}
+.bests__list--3 .bests__item--6 {
+  @media #{$min-tablet-width} {
+    background-color: lightsteelblue;
+    transform: translateX(-100%);
+  }
+}
+.bests__list--3 .bests__item--7 {
+  @media #{$min-tablet-width} {
+    background-color: lightseagreen;
+    transform: translateX(-100%);
+  }
+}
+.bests__list--3 .bests__item--8 {
+  @media #{$min-tablet-width} {
+    background-color: lightslategrey;
+    transform: translateX(-100%);
+  }
+}
+.bests__list--3 .bests__item--9 {
+  @media #{$min-tablet-width} {
+    background-color: lightyellow;
+    transform: translateX(-100%);
+  }
+}
+
+.bests__list--4 .bests__item--1 {
+  @media #{$min-tablet-width} {
+    background-color: lavender;
+    transform: translateX(-300%);
+  }
+}
+.bests__list--4 .bests__item--2 {
+  @media #{$min-tablet-width} {
+    background-color: lemonchiffon;
+    transform: translateX(-300%);
+  }
+}
+.bests__list--4 .bests__item--3 {
+  @media #{$min-tablet-width} {
+    background-color: lightgray;
+    transform: translateX(-300%);
+  }
+}
+.bests__list--4 .bests__item--4 {
+  @media #{$min-tablet-width} {
+    background-color: lightcoral;
+    transform: translateX(-300%);
+  }
+}
+.bests__list--4 .bests__item--5 {
+  @media #{$min-tablet-width} {
+    background-color: lightskyblue;
+    transform: translateX(-300%);
+  }
+}
+.bests__list--4 .bests__item--6 {
+  @media #{$min-tablet-width} {
+    background-color: lightsteelblue;
+    transform: translateX(-200%);
+  }
+}
+.bests__list--4 .bests__item--7 {
+  @media #{$min-tablet-width} {
+    background-color: lightseagreen;
+    transform: translateX(-200%);
+  }
+}
+.bests__list--4 .bests__item--8 {
+  @media #{$min-tablet-width} {
+    background-color: lightslategrey;
+    transform: translateX(-200%);
+  }
+}
+.bests__list--4 .bests__item--9 {
+  @media #{$min-tablet-width} {
+    background-color: lightyellow;
+    transform: translateX(-200%);
+  }
+}
+
+.bests__list--5 .bests__item--1 {
+  @media #{$min-tablet-width} {
+    background-color: lavender;
+    transform: translateX(-400%);
+  }
+}
+.bests__list--5 .bests__item--2 {
+  @media #{$min-tablet-width} {
+    background-color: lemonchiffon;
+    transform: translateX(-400%);
+  }
+}
+.bests__list--5 .bests__item--3 {
+  @media #{$min-tablet-width} {
+    background-color: lightgray;
+    transform: translateX(-400%);
+  }
+}
+.bests__list--5 .bests__item--4 {
+  @media #{$min-tablet-width} {
+    background-color: lightcoral;
+    transform: translateX(-400%);
+  }
+}
+.bests__list--5 .bests__item--5 {
+  @media #{$min-tablet-width} {
+    background-color: lightskyblue;
+    transform: translateX(-400%);
+  }
+}
+.bests__list--5 .bests__item--6 {
+  @media #{$min-tablet-width} {
+    background-color: lightsteelblue;
+    transform: translateX(-400%);
+  }
+}
+.bests__list--5 .bests__item--7 {
+  @media #{$min-tablet-width} {
+    background-color: lightseagreen;
+    transform: translateX(-300%);
+  }
+}
+.bests__list--5 .bests__item--8 {
+  @media #{$min-tablet-width} {
+    background-color: lightslategrey;
+    transform: translateX(-300%);
+  }
+}
+.bests__list--5 .bests__item--9 {
+  @media #{$min-tablet-width} {
+    background-color: lightyellow;
+    transform: translateX(-300%);
+  }
+}
+
+.bests__list--6 .bests__item--1 {
+  @media #{$min-tablet-width} {
+    background-color: lavender;
+    transform: translateX(-500%);
+  }
+}
+.bests__list--6 .bests__item--2 {
+  @media #{$min-tablet-width} {
+    background-color: lemonchiffon;
+    transform: translateX(-500%);
+  }
+}
+.bests__list--6 .bests__item--3 {
+  @media #{$min-tablet-width} {
+    background-color: lightgray;
+    transform: translateX(-500%);
+  }
+}
+.bests__list--6 .bests__item--4 {
+  @media #{$min-tablet-width} {
+    background-color: lightcoral;
+    transform: translateX(-500%);
+  }
+}
+.bests__list--6 .bests__item--5 {
+  @media #{$min-tablet-width} {
+    background-color: lightskyblue;
+    transform: translateX(-500%);
+  }
+}
+.bests__list--6 .bests__item--6 {
+  @media #{$min-tablet-width} {
+    background-color: lightsteelblue;
+    transform: translateX(-500%);
+  }
+}
+.bests__list--6 .bests__item--7 {
+  @media #{$min-tablet-width} {
+    background-color: lightseagreen;
+    transform: translateX(-500%);
+  }
+}
+.bests__list--6 .bests__item--8 {
+  @media #{$min-tablet-width} {
+    background-color: lightslategrey;
+    transform: translateX(-400%);
+  }
+}
+.bests__list--6 .bests__item--9 {
+  @media #{$min-tablet-width} {
+    background-color: lightyellow;
+    transform: translateX(-400%);
+  }
+}
+/* */

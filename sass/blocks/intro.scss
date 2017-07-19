@@ -1,7 +1,6 @@
 .intro {
   width: 100%;
   box-sizing: border-box;
-  background-size: 100% auto;
   @media #{$max-mobile-width} {
     margin-top: -56px;
     background: rgb(0,0,0);
@@ -10,6 +9,7 @@
     background: linear-gradient(to right, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%), url("../img/intro-mobile-bg.jpg");
     background-position: center 0;
     background-size: 100% auto;
+    background-repeat: no-repeat;
   }
   @media #{$min-tablet-width} {
     background: rgb(0,0,0);
@@ -18,6 +18,7 @@
     background: linear-gradient(to right, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%), url("../img/intro-tablet-bg.jpg");
     background-position: center 0;
     background-size: 100% auto;
+    background-repeat: no-repeat;
   }
   @media #{$min-desktop-width} {
     background: rgb(0,0,0);
@@ -26,6 +27,7 @@
     background: linear-gradient(to right, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%), url("../img/intro-desktop-bg.jpg");
     background-position: center 0;
     background-size: 100% auto;
+    background-repeat: no-repeat;
   }
 }
 .intro__wrapper {
@@ -47,7 +49,6 @@
 .intro__title {
   margin-top: 0;
   color: $text-alt-color;
-  background-color: orange;
   text-align: center;
   font-weight: 400;
   margin-bottom: 0;
@@ -66,7 +67,6 @@
 .intro__description {
   color: $text-alt-color;
   @include centers;
-  background-color: brown;
   text-align: center;
   @media #{$max-mobile-width} {
     display: none;
@@ -87,7 +87,6 @@
 .intro__utp-list {
   margin-left: auto;
   margin-right: auto;
-  background-color: red;
   @media #{$max-mobile-width} {
     margin-top: 46px;
   }
@@ -116,7 +115,6 @@
   }
 }
 .intro__utp-item-title {
-  background-color: orange;
   display: inline-block;
   margin-bottom: 5px;
 }
@@ -234,7 +232,6 @@
 }
 .intro__request-txt {
   color: $text-alt-color;
-  background-color: darkcyan;
   text-align: center;
   display: none;
   @media #{$min-tablet-width} {
@@ -248,7 +245,6 @@
   }
 }
 .intro__form-field {
-  background-color: fuchsia;
   display: flex;
   @include centers;
   @media #{$max-mobile-width} {
@@ -306,6 +302,12 @@
 }
 .intro__form-input--info:focus {
   border: 1px solid #ffffff;
+}
+.intro__form-input--submit {
+  border: 1px solid $button-border-color;
+}
+.intro__form-input--submit:focus {
+  border: 1px solid $button-border-color;
 }
 .intro__call-button {
   box-sizing: border-box;
