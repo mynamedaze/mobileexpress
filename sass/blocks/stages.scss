@@ -12,6 +12,7 @@
   @media #{$min-tablet-width} {
     padding-top: 46px;
     padding-bottom: 15px;
+    position: relative;
   }
   @media #{$min-desktop-width} {
     padding-top: 80px;
@@ -100,6 +101,43 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feb400', end
     width: 658px;
     height: 356px;
     margin-top: 60px;
+  }
+}
+.stages__arrow {
+  @media #{$min-tablet-width} {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 175px;
+    z-index: 10000;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 7px 12px;
+  }
+  @media #{$min-desktop-width} {
+    top: 350px;
+    background-size: 12px 21px;
+  }
+}
+.stages__arrow--left {
+  @media #{$min-tablet-width} {
+    left: 50%;
+    transform: translateX(-270px);
+    background-image: url("/img/left1.svg");
+  }
+  @media #{$min-desktop-width} {
+    transform: translateX(-430px);
+  }
+}
+.stages__arrow--right {
+  @media #{$min-tablet-width} {
+    right: 50%;
+    transform: translateX(270px);
+    background-image: url("/img/right.svg");
+  }
+  @media #{$min-desktop-width} {
+    transform: translateX(430px);
   }
 }
 .stages__slider-list {

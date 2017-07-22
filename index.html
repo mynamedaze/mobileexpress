@@ -21,7 +21,7 @@
     <h1 class="page-header__title visually-hidden">MobileExpress header</h1>
     <div class="page-header__wrapper">
       <div class="page-header__contacts-field">
-        <a href="#" class="page-header__phone-num">8 (988) 888-8888</a>
+        <a href="tel:+73452662181" class="page-header__phone-num">+7 (3452) 66-21-81</a>
         <a href="#" class="page-header__order-call">Заказать<span class="page-header__order-call-spec"> обратный</span> звонок</a>
       </div>
       <div class="main-nav">
@@ -220,6 +220,8 @@
       <div class="stages__call-button-field">
         <button class="stages__call-button">Подать заявку</button>
       </div>
+      <button class="stages__arrow  stages__arrow--left"></button>
+      <button class="stages__arrow  stages__arrow--right"></button>
       <article class="stages__slider">
         <ul class="stages__slider-list">
           <li class="stages__slider-item  stages__slider-item--1">
@@ -258,24 +260,39 @@
         <button class="stages__call-button-foot">Оставить заявку</button>
       </div>
     </div>
+    <div class="stages__temp  visually-hidden">
+      <img src="/img/1-etap.svg" alt="">
+      <img src="/img/2-etap.svg" alt="">
+      <img src="/img/3-etap.svg" alt="">
+      <img src="/img/4-etap.svg" alt="">
+      <img src="/img/5-etap.svg" alt="">
+    </div>
   </section>
   <section class="bests">
     <div class="bests__wrapper">
-      <div class="bests__slider">
-        <button class="bests__arrow  bests__arrow--left"></button>
-        <ul class="bests__list  bests__list--1">
-          <li class="bests__item  bests__item--1"></li>
-          <li class="bests__item  bests__item--2"></li>
-          <li class="bests__item  bests__item--3"></li>
-          <li class="bests__item  bests__item--4"></li>
-          <li class="bests__item  bests__item--5"></li>
-          <li class="bests__item  bests__item--6"></li>
-          <li class="bests__item  bests__item--7"></li>
-          <li class="bests__item  bests__item--8"></li>
-          <li class="bests__item  bests__item--9"></li>
-        </ul>
-        <button class="bests__arrow  bests__arrow--right"></button>
+      <h2 class="bests__title">Только лучшие мастера</h2>
+      <div class="bests__boss-field">
+        <img src="/img/boss.png" alt="" width="100%" class="bests__boss-img">
+        <div class="bests__boss-fio-field"><span class="bests__boss-fio">Андрей Филиппов</span><span class="bests__boss-prof">руководитель</span></div>
       </div>
+      <span class="bests__boss-words">Вы всегда можете обратиться ко мне лично</span>
+      <div class="bests__call-button-field">
+        <button class="bests__call-button">Написать руководителю</button>
+      </div>
+      <button class="bests__arrow  bests__arrow--left"></button>
+      <button class="bests__arrow  bests__arrow--right"></button>
+      <div class="bests__slider">
+        <ul class="bests__list">
+          <li class="bests__item"><img src="/img/staff-1.png" alt="мастер" width="100%" class="bests__staff-img"><div class="bests__fio-field"><span class="bests__fio">Фамилия Имя</span><span class="bests__prof">инженер</span></div></li>
+          <li class="bests__item"><img src="/img/staff-2.png" alt="мастер" width="100%" class="bests__staff-img"><div class="bests__fio-field"><span class="bests__fio">Фамилия Имя</span><span class="bests__prof">инженер</span></div></li>
+          <li class="bests__item  bests__item--mobile"><img src="/img/staff-3.png" alt="мастер" width="100%" class="bests__staff-img"><div class="bests__fio-field"><span class="bests__fio">Фамилия Имя</span><span class="bests__prof">инженер</span></div></li>
+          <li class="bests__item  bests__item--mobile"><img src="/img/staff-4.png" alt="мастер" width="100%" class="bests__staff-img"><div class="bests__fio-field"><span class="bests__fio">Фамилия Имя</span><span class="bests__prof">инженер</span></div></li>
+          <li class="bests__item  bests__item--mobile"><img src="/img/staff-5.png" alt="мастер" width="100%" class="bests__staff-img"><div class="bests__fio-field"><span class="bests__fio">Фамилия Имя</span><span class="bests__prof">инженер</span></div></li>
+          <li class="bests__item  bests__item--mobile"><img src="/img/staff-6.png" alt="мастер" width="100%" class="bests__staff-img"><div class="bests__fio-field"><span class="bests__fio">Фамилия Имя</span><span class="bests__prof">инженер</span></div></li>
+          <li class="bests__item  bests__item--mobile"><img src="/img/staff-7.png" alt="мастер" width="100%" class="bests__staff-img"><div class="bests__fio-field"><span class="bests__fio">Фамилия Имя</span><span class="bests__prof">инженер</span></div></li>
+        </ul>
+      </div>
+      <a href="#" class="bests__show-more">Показать всех мастеров</a>
     </div>
   </section>
   <section class="wait">
@@ -287,7 +304,123 @@
       </div>
     </div>
   </section>
+  <section class="address">
+    <div class="address__wrapper">
+      <h2 class="address__title">Выберите ближайший сервис-центр</h2>
+      <ul class="address__list">
+        <li class="address__item">
+          <ul class="address__text-list">
+            <li class="address__text  address__text--adr">ул. Широтная, д.80, ТЦ Широтный,</li>
+            <li class="address__subtext">(пересечение ул. Пермякова - Широтная)</li>
+            <li class="address__text">1 этаж, в конце касс гипермаркета Райт</li>
+            <li class="address__text  address__text--days"><span class="address__days-title">Режим работы:</span><span class="address__days-description"> Пн - Вс, с 10:00 до 21:00</span></li>
+            <li class="address__text  address__text--tel"><span class="address__tel-title">Телефон: </span><span class="address__tel-description"><a href="tel:+73452662181" class="address__tel-link">+7 (3452) 66-21-81</a></span></li>
+          </ul>
+          <a href="#" class="address__see-more">Посмотреть на карте</a>
+          <div class="address__api-field  address__api-field--mobile  address__api-field--1">
+            <iframe src="https://yandex.ru/map-widget/v1/-/CBQ1bURMTD" width="100%" height="100%" frameborder="0"></iframe>
+          </div>
+          <div class="address__call-button-field  address__call-button-field--mobile">
+            <button class="address__call-button">Записаться на ремонт</button>
+          </div>
+        </li>
+        <li class="address__item">
+          <ul class="address__text-list">
+            <li class="address__text  address__text--adr">ул. Пермякова, 82 копр.1</li>
+            <li class="address__subtext">(отдельная входная группа с вывесками с ул. Менделеева.)</li>
+            <li class="address__text">1 этаж, в конце касс гипермаркета Райт</li>
+            <li class="address__text  address__text--days"><span class="address__days-title">Режим работы:</span><span class="address__days-description"> Пн - Вс, с 10:00 до 20:00</span></li>
+            <li class="address__text  address__text--tel"><span class="address__tel-title">Телефон: </span><span class="address__tel-description"><a href="tel:+73452662181" class="address__tel-link">+7 (3452) 66-21-81</a></span></li>
+          </ul>
+          <a href="#" class="address__see-more">Посмотреть на карте</a>
+          <div class="address__api-field  address__api-field--mobile  address__api-field--2">
+            <iframe src="https://yandex.ru/map-widget/v1/-/CBQ1rWqw-C" width="100%" height="100%" frameborder="0"></iframe>
+          </div>
+          <div class="address__call-button-field  address__call-button-field--mobile">
+            <button class="address__call-button">Записаться на ремонт</button>
+          </div>
+        </li>
+        <li class="address__item">
+          <ul class="address__text-list">
+            <li class="address__text  address__text--adr">ул. Пермякова, 50Б, 1 этаж ТЦ Солнечный</li>
+            <li class="address__text  address__text--days"><span class="address__days-title">Режим работы:</span><span class="address__days-description"> Пн - Вс, с 10:00 до 20:00</span></li>
+            <li class="address__text  address__text--tel"><span class="address__tel-title">Телефон: </span><span class="address__tel-description"><a href="tel:+73452662181" class="address__tel-link">+7 (3452) 66-21-81</a></span></li>
+          </ul>
+          <a href="#" class="address__see-more">Посмотреть на карте</a>
+          <div class="address__api-field  address__api-field--mobile  address__api-field--3">
+            <iframe src="https://yandex.ru/map-widget/v1/-/CBQ1r0RIwC" width="100%" height="100%" frameborder="0"></iframe>
+          </div>
+          <div class="address__call-button-field  address__call-button-field--mobile">
+            <button class="address__call-button">Записаться на ремонт</button>
+          </div>
+        </li>
+        <li class="address__item">
+          <ul class="address__text-list">
+            <li class="address__text  address__text--adr">Сервисный центр: ул.Пржевальского 42а</li>
+            <li class="address__subtext">(отдельная входная группа с вывесками с ул. Пржевальского)</li>
+            <li class="address__text  address__text--days"><span class="address__days-title">Режим работы:</span><span class="address__days-description"> Пн - Вс, с 10:00 до 21:00<br> Сб - Вс, с 11:00 до 17:00</span></li>
+            <li class="address__text  address__text--tel"><span class="address__tel-title">Телефон: </span><span class="address__tel-description"><a href="tel:+73452662181" class="address__tel-link">+7 (3452) 66-21-81</a></span></li>
+          </ul>
+          <a href="#" class="address__see-more">Посмотреть на карте</a>
+          <div class="address__api-field  address__api-field--mobile  address__api-field--4">
+            <iframe src="https://yandex.ru/map-widget/v1/-/CBQ1r8uGKB" width="100%" height="100%" frameborder="0"></iframe>
+          </div>
+          <div class="address__call-button-field  address__call-button-field--mobile">
+            <button class="address__call-button">Записаться на ремонт</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="comments">
+    <div class="comments__wrapper">
+    </div>
+  </section>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <h2 class="page-footer__title visually-hidden">Remont Express footer</h2>
+      <div class="page-footer__address-field">
+        <h3 class="page-footer__address-title">Сервис-центры MobileExpress</h3>
+        <ul class="page-footer__address-list">
+          <li class="page-footer__address-item">&mdash; ул. Широтная, д.80, ТЦ Широтный</li>
+          <li class="page-footer__address-item">&mdash; ул. Пермякова, 82 корп.1</li>
+          <li class="page-footer__address-item">&mdash; ул. Пермякова, 50Б, 1 этаж ТЦ Солнечный</li>
+          <li class="page-footer__address-item">&mdash; ул.Пржевальского 42а</li>
+        </ul>
+        <h3 class="page-footer__address-title">Телефон:</h3>
+        <ul class="page-footer__address-list">
+          <li class="page-footer__address-item">&mdash; <a class="page-footer__address-tel-link" href="tel:+73452662181">+7 (3452) 66-21-81</a></li>
+        </ul>
+      </div>
+      <ul class="page-footer__nav-1-list">
+        <li class="page-footer__nav-1-item"><a href="#" class="page-footer__nav-1-link">Гарантия</a></li>
+        <li class="page-footer__nav-1-item"><a href="#" class="page-footer__nav-1-link">Стоимость</a></li>
+        <li class="page-footer__nav-1-item"><a href="#" class="page-footer__nav-1-link">Порядок работы</a></li>
+        <li class="page-footer__nav-1-item"><a href="#" class="page-footer__nav-1-link">Выездной ремонт</a></li>
+      </ul>
+      <ul class="page-footer__nav-2-list">
+        <li class="page-footer__nav-2-item"><a href="#" class="page-footer__nav-2-link">Отзывы</a></li>
+        <li class="page-footer__nav-2-item"><a href="#" class="page-footer__nav-2-link">Наши мастера</a></li>
+        <li class="page-footer__nav-2-item"><a href="#" class="page-footer__nav-2-link">Контакты</a></li>
+      </ul>
+      <div class="page-footer__right-field">
+        <a href="#" class="page-footer__right-callback-link">Заказать обратный звонок</a>
+        <a href="tel:+73452662181" class="page-footer__right-tel">+7 (3452) 66-21-81</a>
+        <div class="page-footer__right-social-field">
+          <span class="page-footer__right-social-txt  page-footer__right-social-txt--1">Присоединяйся</span>
+          <span class="page-footer__right-social-txt  page-footer__right-social-txt--2">Мы в соцсетях</span>
+          <div class="page-footer__right-social-subfield">
+            <a href="https://vk.com/remont_iphone_tyumen72" class="page-footer__right-link  page-footer__right-link--vk"><img src="/img/vk.svg" width="100%" height="100%" alt="vk-группа" target="_blank" class="page-footer__right-vk-img"></a>
+            <a href="https://www.instagram.com/mobileexpress72/" class="page-footer__right-link  page-footer__right-link--insta"><img src="/img/insta.svg" width="100%" height="100%" alt="instagram профиль" target="_blank" class="page-footer__right-insta-img"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <section class="popup-main"></section>
+  <div class="overlay  overlay--inactive"></div>
   <script type="text/javascript" src="/js/main.js"></script>
+  <script type="text/javascript" src="/js/picturefill.min.js"></script>
 </body>
 
 </html>

@@ -81,6 +81,7 @@
     max-width: 150px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 20px;
   }
   @media #{$min-tablet-width} {
     font-size: 1.4rem;
@@ -92,23 +93,25 @@
 .page-header__phone-num::before {
   position: absolute;
   content: "";
-  left: 0;
   top: 50%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
   background-image: url("/img/phone-icon.svg");
   @media #{$max-mobile-width} {
+    left: 0;
     width: 14px;
     height: 14px;
     transform: translateY(-7px);
   }
   @media #{$min-tablet-width} {
+    left: -5px;
     width: 12px;
     height: 12px;
     transform: translateY(-6px);
   }
   @media #{$min-desktop-width} {
+    left: -10px;
     width: 16px;
     height: 16px;
     transform: translateY(-8px);

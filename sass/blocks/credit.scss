@@ -21,15 +21,43 @@
   color: $links-color;
   display: block;
   text-align: center;
+  position: relative;
+  @include centers;
   @media #{$max-mobile-width} {
     font-size: 1.8rem;
     margin-bottom: 33px;
   }
   @media #{$min-tablet-width} {
     font-size: 1.4rem;
+    padding-right: 20px;
+    width: 240px;
   }
   @media #{$min-desktop-width} {
     font-size: 1.9rem;
+    width: 330px;
+  }
+}
+.credit__title-link::after {
+  @media #{$max-mobile-width} {
+    display: none;
+  }
+  @media #{$min-tablet-width} {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 6px;
+    top: 50%;
+    right: 18px;
+    transform: translateY(-2px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    background-image: url("/img/arrow-link.svg");
+  }
+  @media #{$min-desktop-width} {
+    width: 5px;
+    height: 10px;
+    transform: translateY(-3px);
   }
 }
 .credit__strong {

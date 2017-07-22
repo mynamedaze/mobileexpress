@@ -167,11 +167,12 @@ var stageIcon3 = document.getElementsByClassName('stages__icon-item--3');
 var stageIcon4 = document.getElementsByClassName('stages__icon-item--4');
 var stageIcon5 = document.getElementsByClassName('stages__icon-item--5');
 
-
-
 var progressBar = document.getElementsByClassName('stages__progress');
 
 var stagesSliderList = document.getElementsByClassName('stages__slider-list');
+
+var stagesArrowCounter = 0;
+var widthCounter = 20;
 
 $(stageIcon1).click(function() {
   $(stageIcon1).addClass('stages__icon-item--active-1');
@@ -181,6 +182,8 @@ $(stageIcon1).click(function() {
   $(stageIcon5).removeClass('stages__icon-item--active-5');
   
   $(progressBar).width('20%');
+  stagesArrowCounter = 0;
+  widthCounter = 20;
 
   $(stagesSliderList).addClass('stages__slider-list--1');
   $(stagesSliderList).removeClass('stages__slider-list--2');
@@ -197,6 +200,8 @@ $(stageIcon2).click(function() {
   $(stageIcon5).removeClass('stages__icon-item--active-5');
 
   $(progressBar).width('40%');
+  stagesArrowCounter = 1;
+  widthCounter = 40;
 
   $(stagesSliderList).addClass('stages__slider-list--2');
   $(stagesSliderList).removeClass('stages__slider-list--1');
@@ -212,6 +217,8 @@ $(stageIcon3).click(function() {
   $(stageIcon5).removeClass('stages__icon-item--active-5');
 
   $(progressBar).width('60%');
+  stagesArrowCounter = 2;
+  widthCounter = 60;
 
   $(stagesSliderList).addClass('stages__slider-list--3');
   $(stagesSliderList).removeClass('stages__slider-list--1');
@@ -227,6 +234,8 @@ $(stageIcon4).click(function() {
   $(stageIcon5).removeClass('stages__icon-item--active-5');
 
   $(progressBar).width('80%');
+  stagesArrowCounter = 3;
+  widthCounter = 80;
 
   $(stagesSliderList).addClass('stages__slider-list--4');
   $(stagesSliderList).removeClass('stages__slider-list--1');
@@ -242,6 +251,8 @@ $(stageIcon5).click(function() {
   $(stageIcon5).addClass('stages__icon-item--active-5');
 
   $(progressBar).width('100%');
+  stagesArrowCounter = 4;
+  widthCounter = 100;
 
   $(stagesSliderList).addClass('stages__slider-list--5');
   $(stagesSliderList).removeClass('stages__slider-list--1');
@@ -249,27 +260,156 @@ $(stageIcon5).click(function() {
   $(stagesSliderList).removeClass('stages__slider-list--3');
   $(stagesSliderList).removeClass('stages__slider-list--4');
 });
-/* оживляем слайдер со специалистами */
+/*делаем альтернативное переключение по стрелочкам на этапах ремонта */
+var stagesArrowLeft = document.getElementsByClassName('stages__arrow--left');
+var stagesArrowRight = document.getElementsByClassName('stages__arrow--right');
+
+var stagesIconItems = document.getElementsByClassName('stages__icon-item');
+stagesIconItems = Array.prototype.slice.call(stagesIconItems);
+
+$(stagesArrowRight).click(function() {
+  if (stagesArrowCounter < 4) {
+    widthCounter = widthCounter + 20;
+    $(progressBar).width(widthCounter.toString() + '%');
+    for (let i = 0; i <= stagesArrowCounter + 1; i++) {
+      $(stagesIconItems[i]).addClass('stages__icon-item--active-' + (i + 1));
+    }
+    $(stagesSliderList).removeClass('stages__slider-list--1');
+    $(stagesSliderList).removeClass('stages__slider-list--2');
+    $(stagesSliderList).removeClass('stages__slider-list--3');
+    $(stagesSliderList).removeClass('stages__slider-list--4');
+    $(stagesSliderList).removeClass('stages__slider-list--5');
+    console.log(stagesArrowCounter);
+    $(stagesSliderList).addClass('stages__slider-list--' + (stagesArrowCounter + 2));
+    stagesArrowCounter++;
+  }
+});
+$(stagesArrowLeft).click(function() {
+  if (stagesArrowCounter > 0) {
+    widthCounter = widthCounter - 20;
+    $(progressBar).width(widthCounter.toString() + '%');
+    for (let i = stagesArrowCounter; i < 5; i++) {
+      $(stagesIconItems[i]).removeClass('stages__icon-item--active-' + (i + 1));
+    }
+    $(stagesSliderList).removeClass('stages__slider-list--1');
+    $(stagesSliderList).removeClass('stages__slider-list--2');
+    $(stagesSliderList).removeClass('stages__slider-list--3');
+    $(stagesSliderList).removeClass('stages__slider-list--4');
+    $(stagesSliderList).removeClass('stages__slider-list--5');
+    console.log(stagesArrowCounter);
+    $(stagesSliderList).addClass('stages__slider-list--' + (stagesArrowCounter));
+    stagesArrowCounter--;
+  }
+});
+
+/* */
+/* оживляем слайдер со специалистами
 var bestArrowLeft = document.getElementsByClassName('bests__arrow--left');
 var bestArrowRight = document.getElementsByClassName('bests__arrow--right');
 var bestsList = document.getElementsByClassName('bests__list');
-var countBest = 1;
-var currentBest = 0;
+var countBest = 2;
+var currentBest = 1;
+var countMore = 1;
 
 $(bestArrowRight).click(function() {
-  if (countBest < 6) {
+  if (countBest < 4) {
   $(bestsList).addClass('bests__list--' + (countBest + 1));
   $(bestsList).removeClass('bests__list--' + countBest);
   countBest++;
+  countMore++;
   }
 });
 
 $(bestArrowLeft).click(function() {
-  if (countBest > 1) {
+  if (countMore > 0) {
   $(bestsList).addClass('bests__list--' + (countBest - 1));
   $(bestsList).removeClass('bests__list--' + countBest);
-  $(bestsList).removeClass('bests__list--' + currentBest);
-  currentBest = countBest - 1;
   countBest--;
+  countMore--;
   }
+});
+*/
+/*зацикливаем слайдер со специалистами */
+jQuery(document).ready(function ($) {
+
+var slideCount = $('.bests__item').length;
+	var slideWidth = $('.bests__item').width();
+	var slideHeight = $('.bests__item').height();
+	var sliderUlWidth = 1920;
+		
+  $('.bests__item:last-child').prependTo('.bests__list');
+  $('.bests__list').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+  $('.bests__item:nth-child(3)').css({ marginRight: slideWidth });
+     
+    function moveLeft() {
+        $('.bests__item:nth-child(3)').animate({
+            left: + slideWidth
+        }, 200);
+        $('.bests__list').animate({
+            left: + slideWidth
+        }, 200, function () {
+            $('.bests__item:last-child').prependTo('.bests__list');
+            $('.bests__list').css('left', '');
+            $('.bests__item:nth-child(3)').css({ marginRight: slideWidth });
+            $('.bests__item:nth-child(4)').css({ marginRight: 0 });
+        });
+      $('.bests__item:nth-child(3)').animate({
+            left: 0
+        }, 0);
+    };
+
+    function moveRight() {
+      $('.bests__item:nth-child(4)').animate({
+            left: - slideWidth
+        }, 200);
+        $('.bests__list').animate({
+            left: - slideWidth
+        }, 200, function () {
+            $('.bests__item:first-child').appendTo('.bests__list');
+            $('.bests__list').css('left', '');
+            $('.bests__item:nth-child(2)').css({ marginRight: 0 });
+            $('.bests__item:nth-child(3)').css({ marginRight: slideWidth });
+        });
+      $('.bests__item:nth-child(4)').animate({
+            left: 0
+        }, 0);
+    };
+
+    $('.bests__arrow--left').click(function () {
+        moveLeft();
+    });
+
+    $('.bests__arrow--right').click(function () {
+        moveRight();
+    });
+	
+});    
+/* */
+/* раскрываем адреса для мобильной версии */
+var addressMore = document.getElementsByClassName('address__see-more');
+addressMore = Array.prototype.slice.call(addressMore);
+
+var addressApi = document.getElementsByClassName('address__api-field');
+addressApi = Array.prototype.slice.call(addressApi);
+
+var addressButton = document.getElementsByClassName('address__call-button-field');
+addressButton = Array.prototype.slice.call(addressButton);
+
+addressMore.forEach(function (element, i) {
+    element.addEventListener('click', function (event) {
+      event.preventDefault();
+      $(addressApi[i]).removeClass('address__api-field--mobile');
+      $(addressButton[i]).removeClass('address__call-button-field--mobile');
+      $(addressMore[i]).addClass('disable');
+    })
+});
+/* */
+/* отображаем всех мастеров в мобильной версии */
+var bestsShowMore = document.getElementsByClassName('bests__show-more');
+var bestsItem = document.getElementsByClassName('bests__item');
+
+$(bestsShowMore).click(function(event) {
+  event.preventDefault();
+  $(bestsItem).removeClass('bests__item--mobile');
+  $(bestsShowMore).addClass('disable');
 });
