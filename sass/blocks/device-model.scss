@@ -244,8 +244,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feb400', end
   }
 }
 .device-model__break-text {
-  @media #{$min-tablet-width} {
-  }
+  text-align: left;
 }
 .device-model__break-type-cost {
   flex-shrink: 0;

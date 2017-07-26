@@ -250,10 +250,12 @@
   @media #{$max-mobile-width} {
     max-width: 179px;
     flex-direction: column;
+    margin-top: 17px;
   }
   @media #{$min-tablet-width} {
     max-width: 248px;
     margin-top: 17px;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
   @media #{$min-desktop-width} {
@@ -271,6 +273,7 @@
     width: 100%;
     min-height: 4rem;
     font-size: 1.8rem;
+    margin-top: 20px;
   }
   @media #{$min-tablet-width} {
     width: 113px;
@@ -281,12 +284,6 @@
     width: 200px;
     min-height: 4.2rem;
     font-size: 1.9rem;
-  }
-}
-.intro__call-button-field {
-  @media #{$max-mobile-width} {
-    max-width: 179px;
-    @include centers;
   }
 }
 .intro__form-input--info {
@@ -308,6 +305,30 @@
 }
 .intro__form-input--submit:focus {
   border: 1px solid $button-border-color;
+}
+.intro__form-confid-field {
+  color: #ffffff;
+  text-align: center;
+  @media #{$max-mobile-width} {
+    margin-top: 10px;
+  }
+  @media #{$min-tablet-width} {
+    margin-top: 10px;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 1rem;
+  }
+}
+.intro__form-confid-link {
+  color: #FBBF18;
+}
+.intro__call-button-field {
+  @media #{$max-mobile-width} {
+    max-width: 179px;
+    @include centers;
+  }
 }
 .intro__call-button {
   box-sizing: border-box;

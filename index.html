@@ -10,11 +10,11 @@
   <link rel="icon" type="image/png" href="/favicon.png" sizes="16x16" />
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
   <title>Выездной ремонт Apple iPhone | сервисный центр Айфон в Тюмени - MobileExpress</title>
+  <script type="text/javascript" src="/js/flexibility.js"></script>
+  <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.inputmask.bundle.js"></script>
 </head>
-<script type="text/javascript" src="/js/flexibility.js"></script>
-<script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="/js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="/js/jquery.inputmask.bundle.js"></script>
 
 <body>
   <header class="page-header">
@@ -26,11 +26,11 @@
       </div>
       <div class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#" class="main-nav__item-link">Стоимость</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__item-link">Гарантия</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__item-link">Выездной ремонт</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__item-link">Отзывы</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__item-link">Контакты</a></li>
+          <li class="main-nav__item"><a href="#cost-y" class="main-nav__item-link">Стоимость</a></li>
+          <li class="main-nav__item"><a href="#garanty-y" class="main-nav__item-link">Гарантия</a></li>
+          <li class="main-nav__item"><a href="#departure-y" class="main-nav__item-link">Выездной ремонт</a></li>
+          <li class="main-nav__item"><a href="#feedback-y" class="main-nav__item-link">Отзывы</a></li>
+          <li class="main-nav__item"><a href="#contacts-y" class="main-nav__item-link">Контакты</a></li>
         </ul>
       </div>
       <a href="#" class="page-header__logo-link"></a>
@@ -50,17 +50,21 @@
       </div>
       <span class="intro__request-txt">Оставьте заявку и наш менеджер быстро Вас проконсультирует</span>
       <form action="mail.php" method="post" class="intro__form-field  intro__form-field--mobile  this_is_my_lead_form  form_lead_stt"
-        id="form-1" name="call-master">
+        id="form-intro" name="call-master">
         <input type="tel" class="intro__form-input  intro__form-input--info  phone_lead_stt" name="uphone" id="telephone-field-intro"
           placeholder="Телефон" required>
         <input type="submit" class="intro__form-input  intro__form-input--submit" name="callback-submit" value="Консультация">
+        <div class="intro__form-confid-field">
+          <input type="checkbox" class="intro__form-confid-checkbox" checked required>
+          <span class="intro__form-confid-text">Я согласен с условиями <a href="/confid.html" class="intro__form-confid-link">обработки персональных данных</a></span>
+        </div>
       </form>
       <div class="intro__call-button-field">
         <button class="intro__call-button">Консультация</button>
       </div>
     </div>
   </section>
-  <section class="mobile-car">
+  <section class="mobile-car" id="departure-y">
     <div class="mobile-car__wrapper">
       <div class="mobile-car__img-field"></div>
       <div class="mobile-car__text-field">
@@ -89,7 +93,6 @@
         <li class="device-model__model-item  device-model__model-item--phone"><span class="device-model__model-number">5</span></li>
         <li class="device-model__model-item  device-model__model-item--phone"><span class="device-model__model-number">5C</span></li>
         <li class="device-model__model-item  device-model__model-item--phone"><span class="device-model__model-number">5S</span></li>
-        <li class="device-model__model-item  device-model__model-item--phone"><span class="device-model__model-number">SE</span></li>
         <li class="device-model__model-item  device-model__model-item--phone"><span class="device-model__model-number">6</span></li>
         <li class="device-model__model-item  device-model__model-item--phone"><span class="device-model__model-number">6Plus</span></li>
         <li class="device-model__model-item  device-model__model-item--phone"><span class="device-model__model-number">6S</span></li>
@@ -101,41 +104,285 @@
         <li class="device-model__model-item  device-model__model-item--pad  device-model__model-item--active"><span class="device-model__model-number">2</span></li>
         <li class="device-model__model-item  device-model__model-item--pad"><span class="device-model__model-number">3</span></li>
         <li class="device-model__model-item  device-model__model-item--pad"><span class="device-model__model-number">4</span></li>
-        <li class="device-model__model-item  device-model__model-item--pad"><span class="device-model__model-number">Air</span></li>
-        <li class="device-model__model-item  device-model__model-item--pad"><span class="device-model__model-number">Air 2</span></li>
         <li class="device-model__model-item  device-model__model-item--pad"><span class="device-model__model-number">mini</span></li>
-        <li class="device-model__model-item  device-model__model-item--pad"><span class="device-model__model-number">mini 2</span></li>
-        <li class="device-model__model-item  device-model__model-item--pad"><span class="device-model__model-number">mini 3</span></li>
-        <li class="device-model__model-item  device-model__model-item--pad"><span class="device-model__model-number">mini 4</span></li>
+        <li class="device-model__model-item  device-model__model-item--pad"><span class="device-model__model-number">mini Retina</span></li>
+        <li class="device-model__model-item  device-model__model-item--pad"><span class="device-model__model-number">Air</span></li>
       </ul>
       <div class="device-model__break-mainlist  device-model__break-mainlist--phone">
         <ul class="device-model__break-list  device-model__break-list--phone">
-          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Ремонт экрана</span><span class="device-model__break-type-cost">800 - 1500<span class="device-model__break-rubl"> руб.</span></span></a></li>
-          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена аккумулятора</span><span class="device-model__break-type-cost">1990<span class="device-model__break-rubl"> руб.</span></span></a></li>
-          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена стекла</span><span class="device-model__break-type-cost">1890<span class="device-model__break-rubl"> руб.</span></span></a></li>
-          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена корпуса</span><span class="device-model__break-type-cost">2890<span class="device-model__break-rubl"> руб.</span></span></a></li>
-          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена разъема</span><span class="device-model__break-type-cost">1490<span class="device-model__break-rubl"> руб.</span></span></a></li>
-          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена микрофона</span><span class="device-model__break-type-cost">1490<span class="device-model__break-rubl"> руб.</span></span></a></li>
-          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена динамика, камеры</span><span class="device-model__break-type-cost">1490<span class="device-model__break-rubl"> руб.</span></span></a></li>
-          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена модуля</span><span class="device-model__break-type-cost">1490<span class="device-model__break-rubl"> руб.</span></span></a></li>
-          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена платы</span><span class="device-model__break-type-cost">1890<span class="device-model__break-rubl"> руб.</span></span></a></li>
-          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена клавиатуры</span><span class="device-model__break-type-cost">1990<span class="device-model__break-rubl"> руб.</span></span></a></li>
-          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа</span><span class="device-model__break-type-cost">1890<span class="device-model__break-rubl"> руб.</span></span></a></li>
-          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена АКБ</span><span class="device-model__break-type-cost">1890<span class="device-model__break-rubl"> руб.</span></span></a></li>
-          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена кнопки Home</span><span class="device-model__break-type-cost">1890<span class="device-model__break-rubl"> руб.</span></span></a></li>
-          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена кнопки ON/OFF</span><span class="device-model__break-type-cost">1890<span class="device-model__break-rubl"> руб.</span></span></a></li>
-          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена задней крышки</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
-          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Ремонт цепи питания</span><span class="device-model__break-type-cost">400<span class="device-model__break-rubl"> руб.</span></span></a></li>
-          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Ремонт шлейфа</span><span class="device-model__break-type-cost">от 4000<span class="device-model__break-rubl"> руб.</span></span></a></li>
-          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Ремонт антенного блока</span><span class="device-model__break-type-cost">0<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Диагностика</span><span class="device-model__break-type-cost">бесплатно<span class="device-model__break-rubl"></span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Программный ремонт</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена модуля</span><span class="device-model__break-type-cost">1890<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа с кнопкой вкл</span><span class="device-model__break-type-cost">1190<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа зарядки с микрофоном</span><span class="device-model__break-type-cost">1190<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа кнопки HOME</span><span class="device-model__break-type-cost">990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена задней крышки</span><span class="device-model__break-type-cost">490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена Слухового динамика</span><span class="device-model__break-type-cost">990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена музыкального динамика</span><span class="device-model__break-type-cost">990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена акб</span><span class="device-model__break-type-cost">1190/1690<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена камеры</span><span class="device-model__break-type-cost">990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена вибромотора</span><span class="device-model__break-type-cost">790<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена корпуса или средней части с кнопками</span><span class="device-model__break-type-cost">2490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Сим лоток</span><span class="device-model__break-type-cost">100<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена модуля WiFi+Bluetooth</span><span class="device-model__break-type-cost">2490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка углов корпуса после падений/ударов</span><span class="device-model__break-type-cost">500<span class="device-model__break-rubl"> руб./угол</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка геометрии корпуса iPhone (только офис)</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+        </ul>
+        <ul class="device-model__break-list  device-model__break-list--phone  disable">
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Диагностика</span><span class="device-model__break-type-cost">бесплатно<span class="device-model__break-rubl"></span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Программный ремонт</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена модуля</span><span class="device-model__break-type-cost">1890<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа с кнопкой вкл</span><span class="device-model__break-type-cost">1190<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа зарядки с микрофоном</span><span class="device-model__break-type-cost">1190<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа кнопки HOME</span><span class="device-model__break-type-cost">990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена задней крышки</span><span class="device-model__break-type-cost">490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена Слухового динамика</span><span class="device-model__break-type-cost">990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена музыкального динамика</span><span class="device-model__break-type-cost">990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена акб</span><span class="device-model__break-type-cost">1190/1690<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена камеры</span><span class="device-model__break-type-cost">990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена вибромотора</span><span class="device-model__break-type-cost">790<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена корпуса или средней части с кнопками</span><span class="device-model__break-type-cost">2490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Сим лоток</span><span class="device-model__break-type-cost">100<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена модуля WiFi+Bluetooth</span><span class="device-model__break-type-cost">2490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка углов корпуса после падений/ударов</span><span class="device-model__break-type-cost">500<span class="device-model__break-rubl"> руб./угол</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка геометрии корпуса iPhone (только офис)</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+        </ul>
+        <ul class="device-model__break-list  device-model__break-list--phone  disable">
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Диагностика</span><span class="device-model__break-type-cost">бесплатно<span class="device-model__break-rubl"></span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Программный ремонт</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена модуля</span><span class="device-model__break-type-cost">2390<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа с кнопкой вкл</span><span class="device-model__break-type-cost">1190<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа зарядки с микрофоном</span><span class="device-model__break-type-cost">1190<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа кнопки HOME</span><span class="device-model__break-type-cost">1190<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена задней крышки</span><span class="device-model__break-type-cost">2990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена Слухового динамика</span><span class="device-model__break-type-cost">1090<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена музыкального динамика</span><span class="device-model__break-type-cost">1090<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена акб</span><span class="device-model__break-type-cost">1190/1690<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена камеры</span><span class="device-model__break-type-cost">1390<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена вибромотора</span><span class="device-model__break-type-cost">890<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена корпуса или средней части с кнопками</span><span class="device-model__break-type-cost">2990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Сим лоток</span><span class="device-model__break-type-cost">100<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена модуля WiFi+Bluetooth</span><span class="device-model__break-type-cost">3490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка углов корпуса после падений/ударов</span><span class="device-model__break-type-cost">500<span class="device-model__break-rubl"> руб./угол</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка геометрии корпуса iPhone (только офис)</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+        </ul>
+        <ul class="device-model__break-list  device-model__break-list--phone  disable">
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Диагностика</span><span class="device-model__break-type-cost">бесплатно<span class="device-model__break-rubl"></span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Программный ремонт</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена модуля</span><span class="device-model__break-type-cost">2390<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа с кнопкой вкл</span><span class="device-model__break-type-cost">1190<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа зарядки с микрофоном</span><span class="device-model__break-type-cost">1190<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа кнопки HOME</span><span class="device-model__break-type-cost">1190<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена задней крышки</span><span class="device-model__break-type-cost">2990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена Слухового динамика</span><span class="device-model__break-type-cost">1090<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена музыкального динамика</span><span class="device-model__break-type-cost">1090<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена акб</span><span class="device-model__break-type-cost">1190/1690<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена камеры</span><span class="device-model__break-type-cost">1390<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена вибромотора</span><span class="device-model__break-type-cost">890<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена корпуса или средней части с кнопками</span><span class="device-model__break-type-cost">2990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Сим лоток</span><span class="device-model__break-type-cost">100<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена модуля WiFi+Bluetooth</span><span class="device-model__break-type-cost">3490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка углов корпуса после падений/ударов</span><span class="device-model__break-type-cost">500<span class="device-model__break-rubl"> руб./угол</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка геометрии корпуса iPhone (только офис)</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+        </ul>
+        <ul class="device-model__break-list  device-model__break-list--phone  disable">
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Диагностика</span><span class="device-model__break-type-cost">бесплатно<span class="device-model__break-rubl"></span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Программный ремонт</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена модуля</span><span class="device-model__break-type-cost">2390<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа с кнопкой вкл</span><span class="device-model__break-type-cost">1290<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа зарядки с микрофоном</span><span class="device-model__break-type-cost">1390<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа кнопки HOME</span><span class="device-model__break-type-cost">1190<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена задней крышки</span><span class="device-model__break-type-cost">2990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена Слухового динамика</span><span class="device-model__break-type-cost">1190<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена музыкального динамика</span><span class="device-model__break-type-cost">1190<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена акб</span><span class="device-model__break-type-cost">1190/1690<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена камеры</span><span class="device-model__break-type-cost">1590<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена вибромотора</span><span class="device-model__break-type-cost">990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена корпуса или средней части с кнопками</span><span class="device-model__break-type-cost">2990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Сим лоток</span><span class="device-model__break-type-cost">100<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена модуля WiFi+Bluetooth</span><span class="device-model__break-type-cost">3990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка углов корпуса после падений/ударов</span><span class="device-model__break-type-cost">500<span class="device-model__break-rubl"> руб./угол</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка геометрии корпуса iPhone (только офис)</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+        </ul>
+        <ul class="device-model__break-list  device-model__break-list--phone  disable">
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Диагностика</span><span class="device-model__break-type-cost">бесплатно<span class="device-model__break-rubl"></span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Программный ремонт</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена модуля</span><span class="device-model__break-type-cost">3390/5900<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа с кнопкой вкл</span><span class="device-model__break-type-cost">1690<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа зарядки с микрофоном</span><span class="device-model__break-type-cost">1690<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа кнопки HOME</span><span class="device-model__break-type-cost">1790<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена задней крышки</span><span class="device-model__break-type-cost">3490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена Слухового динамика</span><span class="device-model__break-type-cost">1690<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена музыкального динамика</span><span class="device-model__break-type-cost">1690<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена акб</span><span class="device-model__break-type-cost">1590/2600<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена камеры</span><span class="device-model__break-type-cost">1990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена вибромотора</span><span class="device-model__break-type-cost">1690<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена корпуса или средней части с кнопками</span><span class="device-model__break-type-cost">3490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Сим лоток</span><span class="device-model__break-type-cost">100<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена модуля WiFi+Bluetooth</span><span class="device-model__break-type-cost">3490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка углов корпуса после падений/ударов</span><span class="device-model__break-type-cost">500<span class="device-model__break-rubl"> руб./угол</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка геометрии корпуса iPhone (только офис)</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+        </ul>
+        <ul class="device-model__break-list  device-model__break-list--phone  disable">
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Диагностика</span><span class="device-model__break-type-cost">бесплатно<span class="device-model__break-rubl"></span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Программный ремонт</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена модуля</span><span class="device-model__break-type-cost">4390/7500<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа с кнопкой вкл</span><span class="device-model__break-type-cost">1790<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа зарядки с микрофоном</span><span class="device-model__break-type-cost">1790<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа кнопки HOME</span><span class="device-model__break-type-cost">1790<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена задней крышки</span><span class="device-model__break-type-cost">3990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена Слухового динамика</span><span class="device-model__break-type-cost">1790<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена музыкального динамика</span><span class="device-model__break-type-cost">1790<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена акб</span><span class="device-model__break-type-cost">1890/2900<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена камеры</span><span class="device-model__break-type-cost">2290<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена корпуса или средней части с кнопками</span><span class="device-model__break-type-cost">3990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Сим лоток</span><span class="device-model__break-type-cost">100<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена модуля WiFi+Bluetooth</span><span class="device-model__break-type-cost">3990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка углов корпуса после падений/ударов</span><span class="device-model__break-type-cost">500<span class="device-model__break-rubl"> руб./угол</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка геометрии корпуса iPhone (только офис)</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+        </ul>
+        <ul class="device-model__break-list  device-model__break-list--phone  disable">
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Диагностика</span><span class="device-model__break-type-cost">бесплатно<span class="device-model__break-rubl"></span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Программный ремонт</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена модуля</span><span class="device-model__break-type-cost">5390/9500<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа с кнопкой вкл</span><span class="device-model__break-type-cost">2190<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа зарядки с микрофоном</span><span class="device-model__break-type-cost">1990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа кнопки HOME</span><span class="device-model__break-type-cost">1990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена задней крышки</span><span class="device-model__break-type-cost">4990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена Слухового динамика</span><span class="device-model__break-type-cost">1990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена музыкального динамика</span><span class="device-model__break-type-cost">1990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена акб</span><span class="device-model__break-type-cost">1890/2900<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена камеры</span><span class="device-model__break-type-cost">2490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена вибромотора</span><span class="device-model__break-type-cost">1990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена корпуса или средней части с кнопками</span><span class="device-model__break-type-cost">4990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Сим лоток</span><span class="device-model__break-type-cost">100<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена модуля WiFi+Bluetooth</span><span class="device-model__break-type-cost">4990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка углов корпуса после падений/ударов</span><span class="device-model__break-type-cost">500<span class="device-model__break-rubl"> руб./угол</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка геометрии корпуса iPhone (только офис)</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+        </ul>
+        <ul class="device-model__break-list  device-model__break-list--phone  disable">
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Диагностика</span><span class="device-model__break-type-cost">бесплатно<span class="device-model__break-rubl"></span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена модуля</span><span class="device-model__break-type-cost">11390/15000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа с кнопкой вкл</span><span class="device-model__break-type-cost">1990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа зарядки с микрофоном</span><span class="device-model__break-type-cost">1990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа кнопки HOME</span><span class="device-model__break-type-cost">1990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена задней крышки</span><span class="device-model__break-type-cost">уточнять</span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена Слухового динамика</span><span class="device-model__break-type-cost">1990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена музыкального динамика</span><span class="device-model__break-type-cost">1990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена акб</span><span class="device-model__break-type-cost">2690/3600<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена камеры</span><span class="device-model__break-type-cost">2500<span class="device-model__break-rubl"> + стоимость запчасти</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена вибромотора</span><span class="device-model__break-type-cost">2500<span class="device-model__break-rubl"> + стоимость запчасти</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена корпуса или средней части с кнопками</span><span class="device-model__break-type-cost">уточнять</span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Сим лоток</span><span class="device-model__break-type-cost">190<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена модуля WiFi+Bluetooth</span><span class="device-model__break-type-cost">5490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка углов корпуса после падений/ударов</span><span class="device-model__break-type-cost">500<span class="device-model__break-rubl"> руб./угол</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка геометрии корпуса iPhone (только офис)</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+        </ul>
+        <ul class="device-model__break-list  device-model__break-list--phone  disable">
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Диагностика</span><span class="device-model__break-type-cost">бесплатно<span class="device-model__break-rubl"></span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена модуля</span><span class="device-model__break-type-cost">11390/19000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа с кнопкой вкл</span><span class="device-model__break-type-cost">2500<span class="device-model__break-rubl"> + стоимость запчасти</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа зарядки с микрофоном</span><span class="device-model__break-type-cost">2500<span class="device-model__break-rubl"> + стоимость запчасти</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа кнопки HOME</span><span class="device-model__break-type-cost">2500<span class="device-model__break-rubl"> + стоимость запчасти</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена задней крышки</span><span class="device-model__break-type-cost">уточнять</span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена Слухового динамика</span><span class="device-model__break-type-cost">2500<span class="device-model__break-rubl"> + стоимость запчасти</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена музыкального динамика</span><span class="device-model__break-type-cost">2500<span class="device-model__break-rubl"> + стоимость запчасти</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена акб</span><span class="device-model__break-type-cost">3590/4500<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена камеры</span><span class="device-model__break-type-cost">2500<span class="device-model__break-rubl"> + стоимость запчасти</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена вибромотора</span><span class="device-model__break-type-cost">2500<span class="device-model__break-rubl"> + стоимость запчасти</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена корпуса или средней части с кнопками</span><span class="device-model__break-type-cost">уточнять</span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка углов корпуса после падений/ударов</span><span class="device-model__break-type-cost">500<span class="device-model__break-rubl"> руб./угол</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка геометрии корпуса iPhone (только офис)</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+        </ul>
+        <ul class="device-model__break-list  device-model__break-list--phone  disable">
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Диагностика</span><span class="device-model__break-type-cost">бесплатно<span class="device-model__break-rubl"></span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена модуля</span><span class="device-model__break-type-cost">13390/21000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа с кнопкой вкл</span><span class="device-model__break-type-cost">2500<span class="device-model__break-rubl"> + стоимость запчасти</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа зарядки с микрофоном</span><span class="device-model__break-type-cost">2500<span class="device-model__break-rubl"> + стоимость запчасти</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа кнопки HOME</span><span class="device-model__break-type-cost">2500<span class="device-model__break-rubl"> + стоимость запчасти</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена задней крышки</span><span class="device-model__break-type-cost">уточнять</span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена Слухового динамика</span><span class="device-model__break-type-cost">2500<span class="device-model__break-rubl"> + стоимость запчасти</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена музыкального динамика</span><span class="device-model__break-type-cost">2500<span class="device-model__break-rubl"> + стоимость запчасти</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена акб</span><span class="device-model__break-type-cost">3590/4500<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена камеры</span><span class="device-model__break-type-cost">2500<span class="device-model__break-rubl"> + стоимость запчасти</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена вибромотора</span><span class="device-model__break-type-cost">2500<span class="device-model__break-rubl"> + стоимость запчасти</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена корпуса или средней части с кнопками</span><span class="device-model__break-type-cost">уточнять</span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка углов корпуса после падений/ударов</span><span class="device-model__break-type-cost">500<span class="device-model__break-rubl"> руб./угол</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка геометрии корпуса iPhone (только офис)</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
         </ul>
       </div>
       <div class="device-model__break-mainlist  device-model__break-mainlist--pad  disable">
         <ul class="device-model__break-list  device-model__break-list--pad">
-          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена стекла (Touch Screen)</span><span class="device-model__break-type-cost">2400</span></a></li>
-          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена аккумулятора</span><span class="device-model__break-type-cost">4200</span></a></li>
-          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена дисплея (нет изображения)</span><span class="device-model__break-type-cost">7250</span></a></li>
-          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правки корпуса (доп. услуга)</span><span class="device-model__break-type-cost">1500</span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Диагностика</span><span class="device-model__break-type-cost">бесплатно</span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Программный ремонт</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена тачскрина</span><span class="device-model__break-type-cost">2990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена дисплея</span><span class="device-model__break-type-cost">4490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа зарядки</span><span class="device-model__break-type-cost">1990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа с разъемом наушников, кнопками громкости, включения и вибро (верхний шлейф)</span><span class="device-model__break-type-cost">2490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена корпуса</span><span class="device-model__break-type-cost">3890<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена аккумулятора</span><span class="device-model__break-type-cost">2990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка углов корпуса после падений/ударов</span><span class="device-model__break-type-cost">500<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка геометрии корпуса iPhone (только офис)</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+        </ul>
+        <ul class="device-model__break-list  device-model__break-list--pad  disable">
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Диагностика</span><span class="device-model__break-type-cost">бесплатно</span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Программный ремонт</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена тачскрина</span><span class="device-model__break-type-cost">2990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена дисплея</span><span class="device-model__break-type-cost">4790<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа зарядки</span><span class="device-model__break-type-cost">2490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа с разъемом наушников, кнопками громкости, включения и вибро (верхний шлейф)</span><span class="device-model__break-type-cost">2490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена корпуса</span><span class="device-model__break-type-cost">3890<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена аккумулятора</span><span class="device-model__break-type-cost">2990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка углов корпуса после падений/ударов</span><span class="device-model__break-type-cost">500<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка геометрии корпуса iPhone (только офис)</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+        </ul>
+        <ul class="device-model__break-list  device-model__break-list--pad  disable">
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Диагностика</span><span class="device-model__break-type-cost">бесплатно</span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Программный ремонт</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена тачскрина</span><span class="device-model__break-type-cost">2990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена дисплея</span><span class="device-model__break-type-cost">4790<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа зарядки</span><span class="device-model__break-type-cost">2490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа с разъемом наушников, кнопками громкости, включения и вибро (верхний шлейф)</span><span class="device-model__break-type-cost">2490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена корпуса</span><span class="device-model__break-type-cost">3890<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена аккумулятора</span><span class="device-model__break-type-cost">2990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка углов корпуса после падений/ударов</span><span class="device-model__break-type-cost">500<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка геометрии корпуса iPhone (только офис)</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+        </ul>
+        <ul class="device-model__break-list  device-model__break-list--pad  disable">
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Диагностика</span><span class="device-model__break-type-cost">бесплатно</span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Программный ремонт</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена тачскрина</span><span class="device-model__break-type-cost">2990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена дисплея</span><span class="device-model__break-type-cost">4990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа зарядки</span><span class="device-model__break-type-cost">2490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа с разъемом наушников, кнопками громкости, включения и вибро (верхний шлейф)</span><span class="device-model__break-type-cost">2490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена корпуса</span><span class="device-model__break-type-cost">4500<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена аккумулятора</span><span class="device-model__break-type-cost">3390<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка углов корпуса после падений/ударов</span><span class="device-model__break-type-cost">500<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка геометрии корпуса iPhone (только офис)</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+        </ul>
+        <ul class="device-model__break-list  device-model__break-list--pad  disable">
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Диагностика</span><span class="device-model__break-type-cost">бесплатно</span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Программный ремонт</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена тачскрина</span><span class="device-model__break-type-cost">2990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена дисплея</span><span class="device-model__break-type-cost">6900<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа зарядки</span><span class="device-model__break-type-cost">2490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа с разъемом наушников, кнопками громкости, включения и вибро (верхний шлейф)</span><span class="device-model__break-type-cost">2490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена корпуса</span><span class="device-model__break-type-cost">4800<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена аккумулятора</span><span class="device-model__break-type-cost">4490<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка углов корпуса после падений/ударов</span><span class="device-model__break-type-cost">500<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка геометрии корпуса iPhone (только офис)</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+        </ul>
+        <ul class="device-model__break-list  device-model__break-list--pad  disable">
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Диагностика</span><span class="device-model__break-type-cost">бесплатно</span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Программный ремонт</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена тачскрина</span><span class="device-model__break-type-cost">3690<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена дисплея</span><span class="device-model__break-type-cost">6890<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа зарядки</span><span class="device-model__break-type-cost">3390<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена шлейфа с разъемом наушников, кнопками громкости, включения и вибро (верхний шлейф)</span><span class="device-model__break-type-cost">2990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена корпуса</span><span class="device-model__break-type-cost">4500<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Замена аккумулятора</span><span class="device-model__break-type-cost">4990<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка углов корпуса после падений/ударов</span><span class="device-model__break-type-cost">500<span class="device-model__break-rubl"> руб.</span></span></a></li>
+          <li class="device-model__break-item  device-model__break-item--mobile"><a href="#" class="device-model__break-link"><span class="device-model__break-text">Правка геометрии корпуса iPhone (только офис)</span><span class="device-model__break-type-cost">1000<span class="device-model__break-rubl"> руб.</span></span></a></li>
         </ul>
       </div>
       <a href="#" class="device-model__see-more">Показать еще</a>
@@ -149,14 +396,18 @@
       <p class="credit__description">Не нашли свою поломку? Мы чиним более 100 видов поломок.<br>Оставьте номер телефона - мы позвоним и проконсультируем
         Вас совершенно бесплатно!</p>
       <form action="mail.php" method="post" class="credit__form-field  credit__form-field--mobile  this_is_my_lead_form  form_lead_stt"
-        id="form-2" name="call-master">
+        id="form-not-found" name="call-master">
         <input type="tel" class="credit__form-input  credit__form-input--info  phone_lead_stt" name="uphone" id="telephone-field-credit"
           placeholder="Телефон" required>
         <input type="submit" class="credit__form-input  credit__form-input--submit" name="callback-submit" value="Я не нашел поломку">
+        <div class="credit__form-confid-field">
+          <input type="checkbox" class="credit__form-confid-checkbox" checked required>
+          <span class="credit__form-confid-text">Я согласен с условиями <a href="/confid.html" class="credit__form-confid-link">обработки персональных данных</a></span>
+        </div>
       </form>
     </div>
   </section>
-  <section class="utp-field">
+  <section class="utp-field" id="garanty-y">
     <div class="utp-field__wrapper">
       <h2 class="utp-field__title">Почему нас выбирают уже <strong class="utp-field__title-strong">8 лет</strong></h2>
       <h3 class="utp-field__subtitle">Потому что Mobile Express это:</h3>
@@ -277,19 +528,30 @@
       </div>
       <span class="bests__boss-words">Вы всегда можете обратиться ко мне лично</span>
       <div class="bests__call-button-field">
-        <button class="bests__call-button">Написать руководителю</button>
+        <a class="bests__call-button">Написать руководителю</a>
       </div>
       <button class="bests__arrow  bests__arrow--left"></button>
       <button class="bests__arrow  bests__arrow--right"></button>
       <div class="bests__slider">
         <ul class="bests__list">
-          <li class="bests__item"><img src="/img/staff-1.png" alt="мастер" width="100%" class="bests__staff-img"><div class="bests__fio-field"><span class="bests__fio">Фамилия Имя</span><span class="bests__prof">инженер</span></div></li>
-          <li class="bests__item"><img src="/img/staff-2.png" alt="мастер" width="100%" class="bests__staff-img"><div class="bests__fio-field"><span class="bests__fio">Фамилия Имя</span><span class="bests__prof">инженер</span></div></li>
-          <li class="bests__item  bests__item--mobile"><img src="/img/staff-3.png" alt="мастер" width="100%" class="bests__staff-img"><div class="bests__fio-field"><span class="bests__fio">Фамилия Имя</span><span class="bests__prof">инженер</span></div></li>
-          <li class="bests__item  bests__item--mobile"><img src="/img/staff-4.png" alt="мастер" width="100%" class="bests__staff-img"><div class="bests__fio-field"><span class="bests__fio">Фамилия Имя</span><span class="bests__prof">инженер</span></div></li>
-          <li class="bests__item  bests__item--mobile"><img src="/img/staff-5.png" alt="мастер" width="100%" class="bests__staff-img"><div class="bests__fio-field"><span class="bests__fio">Фамилия Имя</span><span class="bests__prof">инженер</span></div></li>
-          <li class="bests__item  bests__item--mobile"><img src="/img/staff-6.png" alt="мастер" width="100%" class="bests__staff-img"><div class="bests__fio-field"><span class="bests__fio">Фамилия Имя</span><span class="bests__prof">инженер</span></div></li>
-          <li class="bests__item  bests__item--mobile"><img src="/img/staff-7.png" alt="мастер" width="100%" class="bests__staff-img"><div class="bests__fio-field"><span class="bests__fio">Фамилия Имя</span><span class="bests__prof">инженер</span></div></li>
+          <li class="bests__item"><img src="/img/staff-1.png" alt="мастер" width="100%" class="bests__staff-img">
+            <div class="bests__fio-field"><span class="bests__fio">Надежда Сизикова</span><span class="bests__prof">управляющий</span></div>
+          </li>
+          <li class="bests__item"><img src="/img/staff-2.png" alt="мастер" width="100%" class="bests__staff-img">
+            <div class="bests__fio-field"><span class="bests__fio">Алексей Подколзин</span><span class="bests__prof">самый опытный мастер</span></div>
+          </li>
+          <li class="bests__item  bests__item--mobile"><img src="/img/staff-3.png" alt="мастер" width="100%" class="bests__staff-img">
+            <div class="bests__fio-field"><span class="bests__fio">Алексей Новиков</span><span class="bests__prof">обоятельный консультант</span></div>
+          </li>
+          <li class="bests__item  bests__item--mobile"><img src="/img/staff-4.png" alt="мастер" width="100%" class="bests__staff-img">
+            <div class="bests__fio-field"><span class="bests__fio">Сергей Новиков</span><span class="bests__prof">програмный спец</span></div>
+          </li>
+          <li class="bests__item  bests__item--mobile"><img src="/img/staff-6.png" alt="мастер" width="100%" class="bests__staff-img">
+            <div class="bests__fio-field"><span class="bests__fio">Дарья Желнина</span><span class="bests__prof">склад менеджер</span></div>
+          </li>
+          <li class="bests__item  bests__item--mobile"><img src="/img/staff-7.png" alt="мастер" width="100%" class="bests__staff-img">
+            <div class="bests__fio-field"><span class="bests__fio">Стас Бурмакин</span><span class="bests__prof">лучший консультант</span></div>
+          </li>
         </ul>
       </div>
       <a href="#" class="bests__show-more">Показать всех мастеров</a>
@@ -304,7 +566,7 @@
       </div>
     </div>
   </section>
-  <section class="address">
+  <section class="address" id="contacts-y">
     <div class="address__wrapper">
       <h2 class="address__title">Выберите ближайший сервис-центр</h2>
       <ul class="address__list">
@@ -391,6 +653,7 @@
         <ul class="page-footer__address-list">
           <li class="page-footer__address-item">&mdash; <a class="page-footer__address-tel-link" href="tel:+73452662181">+7 (3452) 66-21-81</a></li>
         </ul>
+        <a class="page-footer__address-conf-link" href="/confid.html">Политика конфиденциальности</a>
       </div>
       <ul class="page-footer__nav-1-list">
         <li class="page-footer__nav-1-item"><a href="#" class="page-footer__nav-1-link">Гарантия</a></li>
@@ -417,8 +680,24 @@
       </div>
     </div>
   </footer>
-  <section class="popup-main"></section>
-  <div class="overlay  overlay--inactive"></div>
+  <section class="popup-main  popup-main--inactive">
+    <div class="popup-main__wrapper">
+      <button class="popup-main__close-btn"></button>
+      <h1 class="popup-main__title">Мы перезвоним!</h1>
+      <p class="popup-main__description">Оставьте номер и мы обязательно позвоним вам менее, чем за 50 секунд!</p>
+      <form action="mail.php" method="post" class="popup-main__form-field  this_is_my_lead_form  form_lead_stt" id="form-main" name="call-master">
+        <input type="text" class="popup-main__form-input  popup-main__form-input--info  phone_lead_stt" name="uname" placeholder="Имя">
+        <input type="tel" class="popup-main__form-input  popup-main__form-input--info  phone_lead_stt" name="uphone" id="telephone-field-popup-main"
+          placeholder="Телефон (обязательно)" required>
+        <input type="submit" class="popup-main__form-input  popup-main__form-input--submit" name="callback-submit" value="Консультация">
+        <div class="popup-main__form-confid-field">
+          <input type="checkbox" class="popup-main__form-confid-checkbox" checked required>
+          <span class="popup-main__form-confid-text">Я согласен с условиями <a href="/confid.html" class="popup-main__form-confid-link">обработки персональных данных</a></span>
+        </div>
+      </form>
+    </div>
+  </section>
+  <div class="overlay"></div>
   <script type="text/javascript" src="/js/main.js"></script>
   <script type="text/javascript" src="/js/picturefill.min.js"></script>
 </body>

@@ -46,6 +46,27 @@ $(document).ready(function(){
   });
 });
 /* */
+/*Плавный скролл*/
+$(function(){
+  $('a[href^="#"]').on('click', function(event) {
+    // отменяем стандартное действие
+    event.preventDefault();
+    
+    var sc = $(this).attr("href"),
+        dn = $(sc).offset().top;
+    /*
+    * sc - в переменную заносим информацию о том, к какому блоку надо перейти
+    * dn - определяем положение блока на странице
+    */
+    
+    $('html, body').animate({scrollTop: dn}, 1000);
+    
+    /*
+    * 1000 скорость перехода в миллисекундах
+    */
+  });
+});
+/* */
 /*кнопка интро*/
 var telephoneFieldIntro = document.getElementById('telephone-field-intro');
 
@@ -69,6 +90,54 @@ $(document).ready(function(){
   $(telephoneFieldCredit).inputmask("+7 (999) 999-9999"); //specifying options
 });
 
+var telephoneFieldPopupMain = document.getElementById('telephone-field-popup-main');
+$(document).ready(function(){
+  $(telephoneFieldPopupMain).inputmask("+7 (999) 999-9999"); //specifying options
+});
+/* */
+/*оживляем главный попап*/
+var overlay = document.getElementsByClassName('overlay');
+
+var popupMainCloseBtn = document.getElementsByClassName('popup-main__close-btn');
+var popupMain = document.getElementsByClassName('popup-main');
+
+var pageHeaderCall = document.getElementsByClassName('page-header__order-call');
+
+var mobileCarCallButton = document.getElementsByClassName('mobile-car__call-button');
+
+var stagesCallButtonFoot = document.getElementsByClassName('stages__call-button-foot');
+
+var pageFooterCallbackLink = document.getElementsByClassName('page-footer__right-callback-link');
+
+$(popupMainCloseBtn).click(function() {
+  $(popupMain).addClass('popup-main--inactive');
+  $(overlay).removeClass('overlay--active');
+});
+
+$(pageHeaderCall).click(function(event) {
+  event.preventDefault();
+  $(popupMain).removeClass('popup-main--inactive');
+  $(overlay).addClass('overlay--active');
+});
+
+$(mobileCarCallButton).click(function(event) {
+  event.preventDefault();
+  $(popupMain).removeClass('popup-main--inactive');
+  $(overlay).addClass('overlay--active');
+});
+
+$(stagesCallButtonFoot).click(function(event) {
+  event.preventDefault();
+  $(popupMain).removeClass('popup-main--inactive');
+  $(overlay).addClass('overlay--active');
+});
+
+$(pageFooterCallbackLink).click(function(event) {
+  event.preventDefault();
+  $(popupMain).removeClass('popup-main--inactive');
+  $(overlay).addClass('overlay--active');
+});
+/* */
 /*переключение тогглов интро*/
 var introTogglePhone = document.getElementsByClassName('device-model__button--iphone');
 var introTogglePad = document.getElementsByClassName('device-model__button--ipad');
@@ -331,6 +400,7 @@ $(bestArrowLeft).click(function() {
 */
 /*зацикливаем слайдер со специалистами */
 jQuery(document).ready(function ($) {
+  if ($(window).width() >= 768) {
 
 var slideCount = $('.bests__item').length;
 	var slideWidth = $('.bests__item').width();
@@ -382,7 +452,7 @@ var slideCount = $('.bests__item').length;
     $('.bests__arrow--right').click(function () {
         moveRight();
     });
-	
+  }
 });    
 /* */
 /* раскрываем адреса для мобильной версии */

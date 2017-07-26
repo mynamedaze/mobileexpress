@@ -1,0 +1,141 @@
+.confid {
+  color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+@media #{$max-mobile-width} {
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(left, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 100%), url("../img/utp-mobile-bg.jpg");
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%), url("../img/utp-mobile-bg.jpg");
+    background: linear-gradient(to right, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%), url("../img/utp-mobile-bg.jpg");
+    background-position: center 0;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+  @media #{$min-tablet-width} {
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(left, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 100%), url("../img/utp-tablet-bg.jpg");
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%), url("../img/utp-tablet-bg.jpg");
+    background: linear-gradient(to right, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%), url("../img/utp-tablet-bg.jpg");
+    background-position: center 0;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+  @media #{$min-desktop-width} {
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(left, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 100%), url("../img/utp-desktop-bg.jpg");
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%), url("../img/utp-desktop-bg.jpg");
+    background: linear-gradient(to right, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%), url("../img/utp-desktop-bg.jpg");
+    background-position: center 0;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+}
+.confid__wrapper {
+  @include section-width;
+  @include paddings;
+  @media #{$max-mobile-width} {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @media #{$min-tablet-width} {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @media #{$min-desktop-width} {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+.confid__logo-link {
+  @include centers;
+  text-align: center;
+  display: block;
+  @media #{$max-mobile-width} {
+    max-width: 300px;
+  }
+  @media #{$min-tablet-width} {
+    max-width: 300px;
+  }
+  @media #{$min-desktop-width} {
+    max-width: 400px;
+  }
+}
+.confid__title {
+  text-align: center;
+  font-weight: 100;
+  position: relative;
+  margin-top: 0;
+  @media #{$max-mobile-width} {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+  @media #{$min-tablet-width} {
+    @include centers;
+    width: 550px;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+  @media #{$min-desktop-width} {
+    width: 700px;
+    font-size: 3.2rem;
+  }
+}
+.confid__title::after {
+  position: absolute;
+  content: "";
+  @media #{$max-mobile-width} {
+    left: 50%;
+    transform: translateX(-35px);
+    width: 70px;
+    background-color: $button-border-color;
+    height: 2px;
+    bottom: -17px;
+  }
+  @media #{$min-tablet-width} {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+background: -moz-linear-gradient(left, rgba(254,180,0,1) 0%, rgba(250,243,7,0) 100%);
+background: -webkit-linear-gradient(left, rgba(254,180,0,1) 0%,rgba(250,243,7,0) 100%);
+background: linear-gradient(to right, rgba(254,180,0,1) 0%,rgba(250,243,7,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feb400', endColorstr='#00faf307',GradientType=1 );
+  }
+  @media #{$min-desktop-width} {
+    height: 3px;
+  }
+}
+.confid__p {
+  font-weight: 300;
+  @media #{$max-mobile-width} {
+    font-size: 1.8rem;
+    margin-top: 50px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 1.4rem;
+    margin-top: 20px;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 1.9rem;
+    margin-top: 40px;
+  }
+}
+.confid__list {
+  font-weight: 300;
+  @media #{$max-mobile-width} {
+    font-size: 1.8rem;
+    margin-top: 50px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 1.4rem;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 1.9rem;
+  }
+}
+.confid__strong {
+  color: #FBBF18;
+}

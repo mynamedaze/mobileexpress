@@ -103,6 +103,7 @@
   }
   @media #{$min-tablet-width} {
     width: 310px;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 19px;
   }
@@ -149,4 +150,21 @@
 }
 .credit__form-input--submit:focus {
   border: 1px solid $button-border-color;
+}
+.credit__form-confid-field {
+  text-align: center;
+  @media #{$max-mobile-width} {
+    margin-top: 10px;
+  }
+  @media #{$min-tablet-width} {
+    margin-top: 10px;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 1rem;
+  }
+}
+.credit__form-confid-link {
+  color: #0080c9;
 }
