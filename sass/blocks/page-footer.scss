@@ -264,6 +264,8 @@
   }
 }
 .page-footer__right-link {
+  border-radius: 50%;
+  background-color: #878787;
   @media #{$max-mobile-width} {
     width: 34px;
     height: 34px;
@@ -276,6 +278,9 @@
     width: 28px;
     height: 28px;
   }
+}
+.page-footer__right-link:hover {
+  background-color: #FBBF18;
 }
 .page-footer__address-conf-link {
   color: #0080c9;

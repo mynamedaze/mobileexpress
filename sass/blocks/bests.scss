@@ -34,7 +34,7 @@
     font-size: 3rem;
   }
   @media #{$min-desktop-width} {
-    width: 780px;
+    width: 510px;
     font-size: 5.2rem;
   }
 }
@@ -169,6 +169,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feb400', end
   box-sizing: border-box;
   outline-width: 0;
   display: inline-block;
+  cursor: pointer;
   @include gradient-btn;
   border-radius: 4px;
   border: 1px solid $button-border-color;

@@ -238,30 +238,35 @@ $(popupMainCloseBtn).click(function() {
 
 $(pageHeaderCall).click(function(event) {
   event.preventDefault();
+  $(popupMain).find("input[name='form_name']").val("Мы перезвоним");
   $(popupMain).removeClass('popup-main--inactive');
   $(overlay).addClass('overlay--active');
 });
 
 $(mobileCarCallButton).click(function(event) {
   event.preventDefault();
+  $(popupMain).find("input[name='form_name']").val("Вызвать мастера");
   $(popupMain).removeClass('popup-main--inactive');
   $(overlay).addClass('overlay--active');
 });
 
 $(stagesCallButtonFoot).click(function(event) {
   event.preventDefault();
+  $(popupMain).find("input[name='form_name']").val("Оставить заявку");
   $(popupMain).removeClass('popup-main--inactive');
   $(overlay).addClass('overlay--active');
 });
 
 $(pageFooterCallbackLink).click(function(event) {
   event.preventDefault();
+  $(popupMain).find("input[name='form_name']").val("Мы перезвоним");
   $(popupMain).removeClass('popup-main--inactive');
   $(overlay).addClass('overlay--active');
 });
 
 $(travelMenuCallButton).click(function(event) {
   event.preventDefault();
+  $(popupMain).find("input[name='form_name']").val("Мы перезвоним");
   $(popupMain).removeClass('popup-main--inactive');
   $(overlay).addClass('overlay--active');
 });
@@ -304,6 +309,7 @@ $(addressCallButton1).click(function(event) {
   $(popupOffices).removeClass('popup-offices--inactive');
   $(overlay).addClass('overlay--active');
   popupAddressOffice.textContent = 'ул. Широтная, д.80, ТЦ Широтный';
+  $(popupOffices).find("input[name='form_name']").val("Записаться на ремонт: Райт");
   console.log(popupAddressOffice);
 });
 
@@ -313,6 +319,7 @@ $(addressCallButton2).click(function(event) {
   $(popupOffices).removeClass('popup-offices--inactive');
   $(overlay).addClass('overlay--active');
   popupAddressOffice.textContent = 'ул. Пермякова, 82 копр.1';
+  $(popupOffices).find("input[name='form_name']").val("Записаться на ремонт: Офис");
   console.log(popupAddressOffice);
 });
 
@@ -322,6 +329,7 @@ $(addressCallButton3).click(function(event) {
   $(popupOffices).removeClass('popup-offices--inactive');
   $(overlay).addClass('overlay--active');
   popupAddressOffice.textContent = 'ул. Пермякова, 50Б, 1 этаж ТЦ Солнечный';
+  $(popupOffices).find("input[name='form_name']").val("Записаться на ремонт: Солнечный");
   console.log(popupAddressOffice);
 });
 
@@ -331,6 +339,7 @@ $(addressCallButton4).click(function(event) {
   $(popupOffices).removeClass('popup-offices--inactive');
   $(overlay).addClass('overlay--active');
   popupAddressOffice.textContent = 'Сервисный центр: ул.Пржевальского 42а';
+  $(popupOffices).find("input[name='form_name']").val("Записаться на ремонт: СВ");
   console.log(popupAddressOffice);
 });
 
@@ -885,4 +894,3 @@ var hiddenMenuDown100 = throttle(hiddenMenuDown, 100);
  $(window).scroll(function() {
   hiddenMenuDown100();
  });
-/* */

@@ -1,0 +1,201 @@
+.travel-menu {
+  transition: top 0.2s ease 0.2s;
+  position: fixed;
+  left: 0;
+  top: -200px;
+  width: 100%;
+  background-color: #e6e6e6;
+  z-index: 1991;
+  width: 100%;
+  box-sizing: border-box;
+}
+.travel-menu--active {
+  transition: top 0.2s ease 0.2s;
+  top: 0;
+}
+.travel-menu__wrapper {
+  @include section-width;
+  @include paddings;
+  display: flex;
+  flex-wrap: wrap;
+  @media #{$max-mobile-width} {
+    padding-top: 5px;
+    padding-bottom: 8px;
+    justify-content: space-between;
+  }
+  @media #{$min-tablet-width} {
+    justify-content: center;
+    padding-top: 10px;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  @media #{$min-desktop-width} {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+}
+.travel-menu__messenger-list {
+  margin-top: 0;
+  display: flex;
+  padding-left: 0;
+  flex-wrap: wrap;
+  @media #{$max-mobile-width} {
+    width: 53%;
+    justify-content: flex-end;
+  }
+  @media #{$min-tablet-width} {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  @media #{$min-desktop-width} {
+    margin-right: 20px;
+  }
+}
+.travel-menu__messenger-item {
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: #878787;
+  @media #{$max-mobile-width} {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+  }
+  @media #{$min-tablet-width} {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  @media #{$min-desktop-width} {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+}
+.travel-menu__messenger-item:hover {
+  background-color: #FBBF18;
+}
+.travel-menu__messenger-item:last-child {
+    margin-right: 0;
+}
+.travel-menu__social-list {
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  @media #{$max-mobile-width} {
+    width: 45%;
+    justify-content: flex-start;
+  }
+  @media #{$min-tablet-width} {
+    margin-bottom: 0;
+    margin-right: 60px;
+  }
+  @media #{$min-desktop-width} {
+    margin-right: 130px;
+  }
+}
+.travel-menu__social-item {
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: #878787;
+  @media #{$max-mobile-width} {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+  }
+  @media #{$min-tablet-width} {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  @media #{$min-desktop-width} {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+}
+.travel-menu__social-item:hover {
+  background-color: #FBBF18;
+}
+.travel-menu__social-item:last-child {
+  margin-right: 0;
+}
+.travel-menu__messenger-item--imessage {
+  @media #{$min-desktop-width} {
+    display: none;
+  }
+}
+.travel-menu__messenger-item--telegram {
+  @media #{$min-desktop-width} {
+    margin-right: 0;
+  }
+}
+.travel-menu__messenger-item--whatsapp {
+  @media #{$min-desktop-width} {
+    display: none;
+  }
+}
+.travel-menu__call-field {
+  display: flex;
+  @media #{$max-mobile-width} {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  @media #{$min-tablet-width} {
+    align-items: center;
+  }
+}
+.travel-menu__call-link {
+  color: #0080c9;
+  @media #{$max-mobile-width} {
+    font-size: 1.8rem;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 1.4rem;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 1.9rem;
+  }
+}
+.travel-menu__call-button-field {
+  @include centers;
+  text-align: center;
+  position: relative;
+  @media #{$max-mobile-width} {
+    max-width: 240px;
+    margin-top: 5px;
+  }
+  @media #{$min-tablet-width} {
+    margin-left: 20px;
+  }
+  @media #{$min-desktop-width} {
+  }
+}
+.travel-menu__call-button {
+  box-sizing: border-box;
+  outline-width: 0;
+  display: inline-block;
+  cursor: pointer;
+  @include gradient-btn;
+  border-radius: 4px;
+  border: 1px solid $button-border-color;
+  @media #{$max-mobile-width} {
+    width: 100%;
+    min-height: 3rem;
+    font-size: 1.7rem;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 1.4rem;
+    width: 180px;
+    min-height: 2.6rem;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 1.9rem;
+    width: 235px;
+    min-height: 4.2rem;
+  }
+}
+.travel-menu__call-button:active {
+  @include gradient-btn--reverse;
+}

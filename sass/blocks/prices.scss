@@ -1,0 +1,120 @@
+.prices__input-field {
+  position: fixed;
+  border: 1px solid #FBBF18;
+  background-color: #F5F5F5;
+  border-radius: 4px;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  z-index: 9999;
+  @media #{$max-mobile-width} {
+    width: 100%;
+  }
+  @media #{$min-tablet-width} {
+    width: 400px;
+    height: 20rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-200px, -100px);
+  }
+}
+.prices__input-field--inactive {
+  display: none;
+}
+.prices__close-btn {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  @media #{$max-mobile-width} {
+    right: 5px;
+    top: 5px;
+  }
+  @media #{$min-tablet-width} {
+    right: 5px;
+    top: 5px;
+  }
+}
+.prices__close-btn::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 1px;
+  background-color: #000000;
+  top: 50%;
+  left: 10px;
+  transform: rotate(45deg);
+}
+.prices__close-btn::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 1px;
+  background-color: #000000;
+  top: 50%;
+  right: 10px;
+  transform: rotate(-45deg);
+}
+.prices__input {
+  display: block;
+  height: 4rem;
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border: 1px solid #FBBF18;
+  border-radius: 3px;
+}
+.prices__input:active {
+  border: 1px solid #FBBF18;
+  outline: none;
+}
+.prices__input:focus {
+  border: 1px solid #FBBF18;
+  outline: none;
+}
+.prices__ok-btn {
+  display: block;
+  height: 4rem;
+  font-size: 2.6rem;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 160px;
+  background-color: #FBBF18;
+  border-radius: 3px;
+}
+.prices__ok-btn:active {
+  background-color: #FBBF18;
+  outline: none;
+}
+.prices__ok-btn:focus {
+  outline: none;
+}
+.prices__submit-btn {
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
+  height: 4rem;
+  font-size: 2.6rem;
+  background-color: #FBBF18;
+  border-radius: 3px;
+}
+.prices__submit-btn:active {
+  background-color: #FBBF18;
+  outline: none;
+}
+.prices__submit-btn:focus {
+  outline: none;
+}
+.prices__input--inactive {
+  display: none;
+}

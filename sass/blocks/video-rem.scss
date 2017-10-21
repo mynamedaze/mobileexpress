@@ -45,6 +45,21 @@
   }
 }
 .video-rem__video-subfield {
+  @media #{$max-mobile-width} {
+    width: 100%;
+  }
+  @media #{$min-tablet-width} {
+    @include centers;
+    max-width: 260px;
+  }
+  @media #{$min-desktop-width} {
+    max-width: 456px;
+  }
+}
+.video-rem__video-file {
+  @media #{$max-mobile-width} {
+    width: 100%;
+  }
   @media #{$min-tablet-width} {
     @include centers;
     max-width: 260px;

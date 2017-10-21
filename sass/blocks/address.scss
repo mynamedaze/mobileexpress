@@ -307,7 +307,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feb400', end
   @include centers;
   text-align: center;
   @media #{$max-mobile-width} {
-    max-width: 179px;
+    max-width: 190px;
     margin-top: 20px;
   }
   @media #{$min-tablet-width} {
