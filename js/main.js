@@ -706,6 +706,9 @@ var slideCount = $('.bests__item').length;
     $('.bests__arrow--right').click(function () {
         moveRight();
     });
+    setInterval(function(){
+      moveRight();
+    }, 3000);
   }
 });    
 /* */

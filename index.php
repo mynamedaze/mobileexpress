@@ -1,363 +1,516 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Новый сайт успешно создан и готов к работе</title>
-    <!-- b0a8e2d8ccb04b24683d347076e80d29e451a385:d3aa2e6571e673001cb012eda23bd97d02234f0b -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic,latin-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption&amp;subset=cyrillic,latin-ext" rel="stylesheet">
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Отремонтируем Ваш Айфон в любом удобном для Вас месте!" />
+  <meta name="keywords" content="мобайл экспресс, mobile express" />
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="16x16" />
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  <title>Выездной ремонт Apple iPhone | сервисный центр Айфон в Тюмени - MobileExpress</title>
+  <script type="text/javascript" src="/js/flexibility.js"></script>
+  <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.inputmask.bundle.js"></script>
+  <!--vk отзывы-->
+  <script type="text/javascript" src="//vk.com/js/api/openapi.js?146"></script>
+  <script type="text/javascript">VK.init({apiId: 6122152, onlyWidgets: true});</script>
+  <!--/vk отзывы-->
+  <!-- Google Tag Manager --> 
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
+  })(window,document,'script','dataLayer','GTM-M3V2H5G');</script>  
+  <!-- End Google Tag Manager -->
+</head>
 
-        html {
-            height: 100%;
-        }
-
-        hr {
-            height: 2px;
-            border: 0;
-            box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
-            margin: 0;
-        }
-
-        a {
-            color: #2fa3e7;
-            text-decoration: none
-        }
-
-        a:focus, a:hover {
-            color: #157ab5;
-            text-decoration: none
-        }
-
-        body {
-            font-family: 'PT Sans', Arial, sans-serif;
-            font-size: 16px;
-            height: 100%;
-            margin: 0;
-        }
-
-        .alert {
-            font-family: 'PT Sans', Arial, sans-serif;
-            line-height: 24px;
-            border: none;
-            border-radius: 0;
-            border-bottom: 2px solid;
-            box-shadow: rgba(77, 80, 94, 0.4) 0px 0px 3px 0px;
-            padding: 25px;
-            background-color: white;
-        }
-
-        h1, h2 {
-            font-family: 'PT Sans Caption', Arial, sans-serif;
-            font-weight: normal;
-            margin: 0;
-        }
-
-        h1 {
-            font-size: 21px;
-            line-height: 30px;
-        }
-
-        h2 {
-            font-size: 18px;
-        }
-
-        @media screen and (min-width: 801px) {
-
-            body {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-orient: vertical;
-                -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                flex-direction: column;
-                min-height: 768px;
-            }
-
-            .top {
-                background-color: #f7f9fa;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-orient: vertical;
-                -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                flex-direction: column;
-                -webkit-box-flex: 1;
-                -ms-flex-positive: 1;
-                flex-grow: 1;
-            }
-            .bottom {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-            }
-            header, footer{
-                width: 690px;
-                margin: 0 auto;
-            }
-            header {
-                display: -webkit-inline-box;
-                display: -ms-inline-flexbox;
-                display: inline-flex;
-                -webkit-box-orient: horizontal;
-                -webkit-box-direction: normal;
-                -ms-flex-direction: row;
-                flex-direction: row;
-                -webkit-box-pack: justify;
-                -ms-flex-pack: justify;
-                justify-content: space-between;
-            }
-            main {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: start;
-                -ms-flex-pack: start;
-                justify-content: flex-start;
-                -webkit-box-orient: vertical;
-                -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                flex-direction: column;
-                width: 740px;
-                margin: 0 auto;
-            }
-            footer {
-                display: -webkit-inline-box;
-                display: -ms-inline-flexbox;
-                display: inline-flex;
-                -webkit-box-orient: horizontal;
-                -webkit-box-direction: normal;
-                -ms-flex-direction: row;
-                flex-direction: row;
-                -webkit-box-pack: justify;
-                -ms-flex-pack: justify;
-                justify-content: space-between;
-                width: 690px;
-            }
-            .logo img{
-                max-width: 100%;
-                max-height: 75px;
-                position: relative;
-                top: 15px;
-            }
-            nav {
-                display: -webkit-inline-box;
-                display: -ms-inline-flexbox;
-                display: inline-flex;
-                -webkit-box-pack: end;
-                -ms-flex-pack: end;
-                justify-content: flex-end;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
-                padding-right: 10px;
-            }
-            nav a {
-                padding: 0 15px
-            }
-            .octo {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-            }
-            .octo img {
-                height: 230px;
-            }
-            .alert {
-                display: -webkit-inline-box;
-                display: -ms-inline-flexbox;
-                display: inline-flex;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
-            }
-            .alert .icon {
-                margin: 0 25px;
-            }
-            .icon img {
-                height: 75px;
-            }
-            .alert.alert-success {
-                border-bottom-color: #70a123;
-            }
-            .footer-col {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-orient: vertical;
-                -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                flex-direction: column;
-                padding: 15px 0;
-            }
-            .footer-col > * {
-                padding: 2px;
-            }
-
-            .bottom-mobile {
-                display: none;
-            }
-        }
-
-        @media screen and (max-width: 800px) {
-
-            .top {
-                margin: 0 auto;
-                background-color: #f7f9fa;
-            }
-
-            .bottom {
-                margin: 0 auto;
-                width: 95%;
-            }
-
-            header, footer, main {
-                width: 95%;
-            }
-
-            header, footer, main {
-                margin: 0 auto;
-            }
-
-            .logo {
-                display: block;
-                width: 60%;
-                margin: 0 auto;
-            }
-
-            .logo img {
-                width: 100%;
-            }
-
-            .icon img {
-                display: none;
-            }
-
-            .octo {
-                width: 60%;
-                margin: 0 auto;
-            }
-
-            .octo img {
-                width: 100%;
-            }
-
-            .alert.alert-success {
-                border-bottom-color: #70a123;
-                margin-bottom: 30px;
-                vertical-align: middle;
-                text-align: center;
-            }
-
-            header nav {
-                display: none;
-            }
-
-            .bottom {
-                display: none;
-            }
-
-            .bottom-mobile footer {
-                display: table;
-                width: 95%;
-                margin-bottom: 35px;
-            }
-
-            .bottom-mobile footer span {
-                text-align: right;
-                display: table-cell;
-            }
-
-            .bottom-mobile footer txt {
-                display: table-cell;
-            }
-
-            .bottom-mobile footer h2 {
-                margin-top: 20px;
-                margin-bottom: 5px;
-            }
-
-            .bottom-mobile footer p {
-                display: table-row;
-                width: 100%;
-                line-height: 25px;
-            }
-        }
-    </style></head>
 <body>
-<div class="top">
-    <header>
-        <a href="http://beget.com" target="_blank" title="Перейти на сайт хостинг-провайдера" class="logo">
-            <img src="https://cp.beget.com/i/logo.png">
-        </a>
-        <nav>
-            <a href="https://cp.beget.com" target="_blank">Панель управления</a>
-            <a href="https://beget.com/ru/domain-register" target="_blank">Регистрация доменов</a>
-            <a href="https://beget.com/ru/virtual-hosting" target="_blank">Тарифы</a>
-        </nav>
-    </header>
-    <main>
-        <div class="octo">
-            <img src="https://cp.beget.com/img/octo/octo_coffee.png">
+  <!-- Google Tag Manager (noscript) --> 
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M3V2H5G" 
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> 
+  <!-- End Google Tag Manager (noscript) -->
+  <header class="page-header">
+    <h1 class="page-header__title visually-hidden">MobileExpress header</h1>
+    <div class="page-header__wrapper">
+      <div class="page-header__contacts-field">
+        <a href="tel:+73452662181" class="page-header__phone-num  tel-for-ringo roistat-phone" onclick="yaCounter45511323.reachGoal('phone_link'); dataLayer.push({'event': 'phone_link'}); return true;">+7 (3452) 66-21-81</a>
+        <a href="#" class="page-header__order-call">Заказать<span class="page-header__order-call-spec"> обратный</span> звонок</a>
+      </div>
+      <div class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#cost-y" class="main-nav__item-link">Стоимость</a></li>
+          <li class="main-nav__item"><a href="#garanty-y" class="main-nav__item-link">Гарантия</a></li>
+          <li class="main-nav__item"><a href="#departure-y" class="main-nav__item-link">Выездной ремонт</a></li>
+          <li class="main-nav__item"><a href="#comments-y" class="main-nav__item-link">Отзывы</a></li>
+          <li class="main-nav__item"><a href="#contacts-y" class="main-nav__item-link">Контакты</a></li>
+        </ul>
+      </div>
+      <a href="#" class="page-header__logo-link"></a>
+    </div>
+  </header>
+  <section class="intro">
+    <div class="intro__wrapper">
+      <h2 class="intro__title"><span id="variable-title">Ремонт </span><span id="variable-device">iPhone и iPad в Тюмени</span></h2>
+      <span class="intro__description">Отремонтируем <span id="intro-description-custom">iPhone</span> при Вас в любое время, в любом месте!</span>
+      <div class="intro__utp-list  owl-carousel  owl-theme">
+        <div class="intro__utp-item"><span class="intro__utp-item-text  intro__utp-item-text--1"><strong class="intro__utp-item-title">Время ремонта</strong><br>от 15 минут</span>
         </div>
-        <div class="alert alert-success">
-            <div class="icon">
-                <img src="https://cp.beget.com/i/icons/small/accept@2x.png">
-            </div>
-            <div class="text">
-                <h1>Новый сайт успешно создан и готов к работе</h1>
-                Благодарим Вас за то, что Вы выбрали наши услуги. Мы работаем для Вас!<br/>
-                Если у Вас возникли вопросы, мы с удовольствием ответим на них.
-            </div>
+        <div class="intro__utp-item"><span class="intro__utp-item-text  intro__utp-item-text--2"><strong class="intro__utp-item-title">Гарантия</strong><br>от 30 до 90 дней</span>
         </div>
-    </main>
-</div>
-<hr>
-<div class="bottom-mobile">
-    <footer>
-        <h2>Тех. поддержка</h2>
-        <p><txt>Почта: </txt><span><a href="mailto:support@beget.com">support@beget.com</a></span></p>
-        <p><txt>Россия:</txt> <span>+7 (800) 700-06-08</span></p>
-        <p><txt>Украина:</txt> <span>+380 (800) 802-192</span></p>
-    </footer>
-</div>
-<div class="bottom">
-    <footer>
-        <div class="footer-col">
-            <div>Тех. поддержка:</div>
-            <div>Бухгалтерия:</div>
-            <div>Руководство:</div>
-            <div>Telegram:</div>
-            <div>Skype:</div>
+        <div class="intro__utp-item"><span class="intro__utp-item-text  intro__utp-item-text--3"><strong class="intro__utp-item-title">Оригинальные запчасти в наличии</strong></span>
         </div>
-        <div class="footer-col" style="padding-right: 100px;">
-            <a href="mailto:support@beget.com">support@beget.com</a>
-            <a href="mailto:bills@beget.com">bills@beget.com</a>
-            <a href="mailto:manager@beget.com">manager@beget.com</a>
-            <a href="tg://resolve?domain=begetbot">@begetbot</a>
-            <a href="https://join.skype.com/bot/ceda3526-d09b-4157-b6f0-91a646073c7e?add" target="_blank">Добавить в контакты</a>
+      </div>
+      <span class="intro__request-txt">Оставьте заявку и наш менеджер быстро Вас проконсультирует</span>
+      <form action="mail.php" method="post" class="intro__form-field  intro__form-field--mobile  this_is_my_lead_form  form_lead_stt"
+        id="form-intro" name="call-master">
+        <input type="tel" class="intro__form-input  intro__form-input--info  phone_lead_stt" name="uphone" id="telephone-field-intro"
+          placeholder="Телефон" required>
+		  <input type="hidden" name="form_name" value="Оставьте заявку и наш менеджер быстро Вас проконсультирует"/>
+        <input type="submit" class="intro__form-input  intro__form-input--submit" name="callback-submit" value="Консультация">
+        <div class="intro__form-confid-field">
+          <input type="checkbox" class="intro__form-confid-checkbox" checked required>
+          <span class="intro__form-confid-text">Я согласен с условиями <a href="/confid.html" class="intro__form-confid-link" target="_blank">обработки персональных данных</a></span>
         </div>
-        <div class="footer-col">
-            <div>Россия:</div>
-            <div>СПб:</div>
-            <div>Москва:</div>
-            <div>Украина:</div>
-            <div>Киев:</div>
+      </form>
+      <div class="intro__call-button-field">
+        <button class="intro__call-button">Консультация</button>
+      </div>
+    </div>
+  </section>
+  <section class="mobile-car" id="departure-y">
+    <div class="mobile-car__wrapper">
+      <div class="mobile-car__img-field"></div>
+      <div class="mobile-car__text-field">
+        <h2 class="mobile-car__title">Выездной ремонт iPhone и iPad</h2>
+        <ul class="mobile-car__list">
+          <li class="mobile-car__item  mobile-car__item--1">К вам приедет <strong>наш мастер</strong>, а не школьник-самоучка</li>
+          <li class="mobile-car__item  mobile-car__item--2">Среднее время прибытия мастера <strong>30 минут</strong></li>
+          <li class="mobile-car__item  mobile-car__item--3">Среднее время ремонта на выезде <strong>35 минут</strong></li>
+        </ul>
+        <div class="mobile-car__call-button-field">
+          <button class="mobile-car__call-button">Вызвать мастера</button>
         </div>
-        <div class="footer-col">
-            <b>+7 (800) 700-06-08</b>
-            <b>+7 (812) 3854136</b>
-            <b>+7 (495) 721-80-88</b>
-            <b>+380 (800) 802-192</b>
-            <b>+380 (44) 300-02-18</b>
+      </div>
+    </div>
+  </section>
+  <?php
+  $prices = file_get_contents('prices.html');
+  echo $prices;
+  ?>
+  <section class="credit">
+    <div class="credit__wrapper">
+      <h2 class="credit__title visually-hidden">Ремонт телефона в кредит</h2>
+      <a href="#" class="credit__title-link">Возможна починка телефона в кредит</a>
+      <strong class="credit__strong">Не нашли свою поломку?</strong>
+      <p class="credit__description">Не нашли свою поломку? Мы чиним более 100 видов поломок.<br>Оставьте номер телефона - мы позвоним и проконсультируем
+        Вас совершенно бесплатно!</p>
+      <form action="mail.php" method="post" class="credit__form-field  credit__form-field--mobile  this_is_my_lead_form  form_lead_stt"
+        id="form-not-found" name="call-master">
+        <input type="tel" class="credit__form-input  credit__form-input--info  phone_lead_stt" name="uphone" id="telephone-field-credit"
+          placeholder="Телефон" required>
+		  <input type="hidden" name="form_name" value="Я не нашел поломку"/>
+        <input type="submit" class="credit__form-input  credit__form-input--submit" name="callback-submit" value="Я не нашел поломку">
+        <div class="credit__form-confid-field">
+          <input type="checkbox" class="credit__form-confid-checkbox" checked required>
+          <span class="credit__form-confid-text">Я согласен с условиями <a href="/confid.html" class="credit__form-confid-link" target="_blank">обработки персональных данных</a></span>
         </div>
-    </footer>
-</div>
+      </form>
+    </div>
+  </section>
+  <section class="utp-field" id="garanty-y">
+    <div class="utp-field__wrapper">
+      <h2 class="utp-field__title">Почему нас выбирают уже <strong class="utp-field__title-strong">8 лет</strong></h2>
+      <h3 class="utp-field__subtitle">Потому что Mobile Express это:</h3>
+      <ul class="utp-field__v1-list">
+        <li class="utp-field__v1-item"><span class="utp-field__v1-item-title">35<span class="utp-field__v1-item-subtitle">минут</span></span><span class="utp-field__v1-item-description">Среднее время ремонта</span></li>
+        <li class="utp-field__v1-item"><span class="utp-field__v1-item-title">16</span><span class="utp-field__v1-item-description">Профессионалов своего дела</span></li>
+        <li class="utp-field__v1-item"><span class="utp-field__v1-item-title">76<span class="utp-field__v1-item-subtitle">лет</span></span><span class="utp-field__v1-item-description">Общий стаж наших мастеров</span></li>
+        <li class="utp-field__v1-item"><span class="utp-field__v1-item-title">4</span><span class="utp-field__v1-item-description">Сервисных центра в Тюмени</span></li>
+      </ul>
+      <div class="utp-field__figure-arrow"></div>
+      <div class="utp-field__utp-list  owl-carousel  owl-theme">
+        <div class="utp-field__utp-item"><span class="utp-field__utp-item-text  utp-field__utp-item-text--1">Всегда бесплатная диагностика</span>
+        </div>
+        <div class="utp-field__utp-item"><span class="utp-field__utp-item-text  utp-field__utp-item-text--2">Стоимость ремонта строго по согласованию</span>
+        </div>
+        <div class="utp-field__utp-item"><span class="utp-field__utp-item-text  utp-field__utp-item-text--3">Возможность оплаты ремонта в кредит</span>
+        </div>
+        <div class="utp-field__utp-item"><span class="utp-field__utp-item-text  utp-field__utp-item-text--4">Бесплатная консультация, помощь и настройка устройств</span>
+        </div>
+        <div class="utp-field__utp-item"><span class="utp-field__utp-item-text  utp-field__utp-item-text--5">Бесплатная наклейка защитных стекол</span>
+        </div>
+        <div class="utp-field__utp-item"><span class="utp-field__utp-item-text  utp-field__utp-item-text--6">Выездной ремонт и курьерская доставка</span>
+        </div>
+        <div class="utp-field__utp-item"><span class="utp-field__utp-item-text  utp-field__utp-item-text--7">Оригинальные запчасти Apple в наличии</span>
+        </div>
+        <div class="utp-field__utp-item"><span class="utp-field__utp-item-text  utp-field__utp-item-text--8">Подменный телефон во время ремонта</span>
+        </div>
+      </div>
+      <ul class="utp-field__list-tablet">
+        <li class="utp-field__item-tablet  utp-field__item-tablet--1">Всегда бесплатная диагностика</li>
+        <li class="utp-field__item-tablet  utp-field__item-tablet--2">Стоимость ремонта строго по согласованию</li>
+        <li class="utp-field__item-tablet  utp-field__item-tablet--3">Возможность оплаты ремонта в кредит</li>
+        <li class="utp-field__item-tablet  utp-field__item-tablet--4">Бесплатная консультация, помощь и настройка устройств</li>
+        <li class="utp-field__item-tablet  utp-field__item-tablet--5">Бесплатная наклейка защитных стекол</li>
+        <li class="utp-field__item-tablet  utp-field__item-tablet--6">Выездной ремонт и курьерская доставка</li>
+        <li class="utp-field__item-tablet  utp-field__item-tablet--7">Оригинальные запчасти Apple в наличии</li>
+        <li class="utp-field__item-tablet  utp-field__item-tablet--8">Подменный телефон во время ремонта</li>
+      </ul>
+    </div>
+  </section>
+  <section class="video-rem">
+    <div class="video-rem__wrapper">
+      <h2 class="video-rem__title">Посмотрите видео ремонта</h2>
+      <div class="video-rem__video-field">
+        <div class="video-rem__video-subfield">
+          <video controls poster="/img/play-video-no-play.jpg" class="video-rem__video-file">
+            <source src="video/time-to-rest.mp4" type="video/mp4">
+            <!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
+          </video>
+        </div>
+      </div>
+      <div class="video-rem__text-field">
+        <span class="video-rem__description">И убедитесь лично в профессионализме наших мастеров!</span>
+        <div class="video-rem__arrow-img"></div>
+      </div>
+    </div>
+  </section>
+  <section class="stages" id="stages-y">
+    <div class="stages__wrapper">
+      <h2 class="stages__title">Простой порядок работы</h2>
+      <div class="stages__call-button-field">
+        <button class="stages__call-button">Подать заявку</button>
+      </div>
+      <button class="stages__arrow  stages__arrow--left"></button>
+      <button class="stages__arrow  stages__arrow--right"></button>
+      <article class="stages__slider">
+        <h3 class="stages__slider-title visually-hidden">Слайдер с этапами ремонта</h3>
+        <ul class="stages__slider-list">
+          <li class="stages__slider-item  stages__slider-item--1">
+            <span class="stages__slider-num">1</span>
+            <span class="stages__slider-text">Мы <strong>принимает Ваше обращение</strong> по телефону или на сайте, консультируем и выявляем потребность в ремонте</span>
+          </li>
+          <li class="stages__slider-item  stages__slider-item--2">
+            <span class="stages__slider-num">2</span>
+            <span class="stages__slider-text"><strong>Выбираем</strong> удобную для Вас мастерскую, курьерскую доставку или ремонт на выезде</span>
+          </li>
+          <li class="stages__slider-item  stages__slider-item--3">
+            <span class="stages__slider-num">3</span>
+            <span class="stages__slider-text">Принимаем оборудование в ремонт, производим <strong>диагностику</strong>, определяем <strong>стоимость ремонта</strong>, выдаем <strong>квитанцию</strong></span>
+          </li>
+          <li class="stages__slider-item  stages__slider-item--4">
+            <span class="stages__slider-num">4</span>
+            <span class="stages__slider-text"><strong>Подробная диагностика</strong> мастера, окончательное <strong>согласование</strong> стоимости и срока ремонта, <strong>начало ремонта</strong></span>
+          </li>
+          <li class="stages__slider-item  stages__slider-item--5">
+            <span class="stages__slider-num">5</span>
+            <span class="stages__slider-text">После ремонта <strong>полная проверка</strong> аппарата, <strong>доставка</strong> или выдача в удобном для Вас сервисе</span>
+          </li>
+        </ul>
+      </article>
+      <div class="stages__progress-field">
+        <div class="stages__progress"></div>
+      </div>
+      <ul class="stages__icon-list">
+        <li class="stages__icon-item  stages__icon-item--1  stages__icon-item--active-1"></li>
+        <li class="stages__icon-item  stages__icon-item--2"></li>
+        <li class="stages__icon-item  stages__icon-item--3"></li>
+        <li class="stages__icon-item  stages__icon-item--4"></li>
+        <li class="stages__icon-item  stages__icon-item--5"></li>
+      </ul>
+      <div class="stages__call-button-field-foot">
+        <button class="stages__call-button-foot">Оставить заявку</button>
+      </div>
+    </div>
+    <div class="stages__temp  visually-hidden">
+      <img src="/img/1-etap.svg" alt="">
+      <img src="/img/2-etap.svg" alt="">
+      <img src="/img/3-etap.svg" alt="">
+      <img src="/img/4-etap.svg" alt="">
+      <img src="/img/5-etap.svg" alt="">
+    </div>
+  </section>
+  <section class="bests" id="bests-y">
+    <div class="bests__wrapper">
+      <h2 class="bests__title">Только лучшие мастера</h2>
+      <div class="bests__boss-field">
+        <img src="/img/boss.png" alt="boss" class="bests__boss-img">
+        <div class="bests__boss-fio-field"><span class="bests__boss-fio">Андрей Филиппов</span><span class="bests__boss-prof">руководитель</span></div>
+      </div>
+      <span class="bests__boss-words">Вы всегда можете обратиться ко мне лично</span>
+      <div class="bests__call-button-field">
+        <a href="https://vk.com/im?sel=5475518" class="bests__call-button" target="_blank" onclick="yaCounter45511323.reachGoal('boss_link'); dataLayer.push({'event': 'boss_link'}); return true;">Написать руководителю</a>
+      </div>
+      <button class="bests__arrow  bests__arrow--left"></button>
+      <button class="bests__arrow  bests__arrow--right"></button>
+      <div class="bests__slider">
+        <ul class="bests__list">
+          <li class="bests__item"><img src="/img/staff-1.png" alt="мастер" class="bests__staff-img">
+            <div class="bests__fio-field"><span class="bests__fio">Надежда Сизикова</span><span class="bests__prof">управляющий</span></div>
+          </li>
+          <li class="bests__item"><img src="/img/staff-2.png" alt="мастер" class="bests__staff-img">
+            <div class="bests__fio-field"><span class="bests__fio">Алексей Подколзин</span><span class="bests__prof">самый опытный мастер</span></div>
+          </li>
+          <li class="bests__item  bests__item--mobile"><img src="/img/staff-3.png" alt="мастер" class="bests__staff-img">
+            <div class="bests__fio-field"><span class="bests__fio">Алексей Новиков</span><span class="bests__prof">обаятельный консультант</span></div>
+          </li>
+          <li class="bests__item  bests__item--mobile"><img src="/img/staff-4.png" alt="мастер" class="bests__staff-img">
+            <div class="bests__fio-field"><span class="bests__fio">Сергей Новиков</span><span class="bests__prof">программный спец</span></div>
+          </li>
+          <li class="bests__item  bests__item--mobile"><img src="/img/staff-6.png" alt="мастер" class="bests__staff-img">
+            <div class="bests__fio-field"><span class="bests__fio">Дарья Желнина</span><span class="bests__prof">склад менеджер</span></div>
+          </li>
+          <li class="bests__item  bests__item--mobile"><img src="/img/staff-7.png" alt="мастер" class="bests__staff-img">
+            <div class="bests__fio-field"><span class="bests__fio">Стас Бурмакин</span><span class="bests__prof">лучший консультант</span></div>
+          </li>
+        </ul>
+      </div>
+      <a href="#" class="bests__show-more">Показать всех мастеров</a>
+    </div>
+  </section>
+  <section class="wait">
+    <div class="wait__wrapper">
+      <h2 class="wait__title  visually-hidden">Не ждите ремонта iPhone</h2>
+      <div class="wait__img-field"></div>
+      <div class="wait__text-field">
+        <span class="wait__text">Хватит ждать! Обращайся в Mobile Express.</span>
+        <span class="wait__text">Честный и быстрый ремонт iPhone!</span>
+      </div>
+    </div>
+  </section>
+  <section class="address" id="contacts-y">
+    <div class="address__wrapper">
+      <h2 class="address__title">Выберите ближайший сервис-центр</h2>
+      <ul class="address__list">
+        <li class="address__item">
+          <ul class="address__text-list">
+            <li class="address__text  address__text--adr">ул. Широтная, д.80, ТЦ Широтный,</li>
+            <li class="address__subtext">(пересечение ул. Пермякова - Широтная)</li>
+            <li class="address__text">1 этаж, в конце касс гипермаркета Райт</li>
+            <li class="address__text  address__text--days"><span class="address__days-title">Режим работы:</span><span class="address__days-description"> Пн - Вс, с 10:00 до 21:00</span></li>
+            <li class="address__text  address__text--tel"><span class="address__tel-title">Телефон: </span><span class="address__tel-description"><a href="tel:+73452662181" class="address__tel-link  tel-for-ringo roistat-phone" onclick="yaCounter45511323.reachGoal('phone_link'); dataLayer.push({'event': 'phone_link'}); return true;">+7 (3452) 66-21-81</a></span></li>
+          </ul>
+          <a href="#" class="address__see-more">Посмотреть на карте</a>
+          <div class="address__api-field  address__api-field--mobile  address__api-field--1">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abf26f2863f5519c2b2bbe7f73fe12168d7b15ba0a942c9c4cb90567b84912292&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+          </div>
+          <div class="address__call-button-field  address__call-button-field--mobile">
+            <button class="address__call-button  address__call-button--1">Записаться на ремонт</button>
+          </div>
+        </li>
+        <li class="address__item">
+          <ul class="address__text-list">
+            <li class="address__text  address__text--adr">ул. Пермякова, 82 копр.1</li>
+            <li class="address__subtext">(отдельная входная группа с вывесками с ул. Менделеева.)</li>
+            <li class="address__text">1 этаж, в конце касс гипермаркета Райт</li>
+            <li class="address__text  address__text--days"><span class="address__days-title">Режим работы:</span><span class="address__days-description"> Пн - Вс, с 10:00 до 20:00</span></li>
+            <li class="address__text  address__text--tel"><span class="address__tel-title">Телефон: </span><span class="address__tel-description"><a href="tel:+73452662181" class="address__tel-link  tel-for-ringo roistat-phone" onclick="yaCounter45511323.reachGoal('phone_link'); dataLayer.push({'event': 'phone_link'}); return true;">+7 (3452) 66-21-81</a></span></li>
+          </ul>
+          <a href="#" class="address__see-more">Посмотреть на карте</a>
+          <div class="address__api-field  address__api-field--mobile  address__api-field--2">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3ad022b58794756aa17fe0a04da67c946db043afa6cf152403cd00dad78595c1&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+          </div>
+          <div class="address__call-button-field  address__call-button-field--mobile">
+            <button class="address__call-button  address__call-button--2">Записаться на ремонт</button>
+          </div>
+        </li>
+        <li class="address__item">
+          <ul class="address__text-list">
+            <li class="address__text  address__text--adr">ул. Пермякова, 50Б, 1 этаж ТЦ Солнечный</li>
+            <li class="address__text  address__text--days"><span class="address__days-title">Режим работы:</span><span class="address__days-description"> Пн - Вс, с 10:00 до 22:00</span></li>
+            <li class="address__text  address__text--tel"><span class="address__tel-title">Телефон: </span><span class="address__tel-description"><a href="tel:+73452662181" class="address__tel-link  tel-for-ringo roistat-phone" onclick="yaCounter45511323.reachGoal('phone_link'); dataLayer.push({'event': 'phone_link'}); return true;">+7 (3452) 66-21-81</a></span></li>
+          </ul>
+          <a href="#" class="address__see-more">Посмотреть на карте</a>
+          <div class="address__api-field  address__api-field--mobile  address__api-field--3">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5bf722812befb8989af85243c9fc6825bc04ee32aa394d834468866a81aef9ad&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+          </div>
+          <div class="address__call-button-field  address__call-button-field--mobile">
+            <button class="address__call-button  address__call-button--3">Записаться на ремонт</button>
+          </div>
+        </li>
+        <li class="address__item">
+          <ul class="address__text-list">
+            <li class="address__text  address__text--adr">Сервисный центр: ул.Пржевальского 42а</li>
+            <li class="address__subtext">(отдельная входная группа с вывесками с ул. Пржевальского)</li>
+            <li class="address__text  address__text--days"><span class="address__days-title">Режим работы:</span><span class="address__days-description"> Пн - Пт, с 9:00 до 19:00<br> Сб - Вс, с 11:00 до 17:00</span></li>
+            <li class="address__text  address__text--tel"><span class="address__tel-title">Телефон: </span><span class="address__tel-description"><a href="tel:+73452662181" class="address__tel-link  tel-for-ringo roistat-phone" onclick="yaCounter45511323.reachGoal('phone_link'); dataLayer.push({'event': 'phone_link'}); return true;">+7 (3452) 66-21-81</a></span></li>
+          </ul>
+          <a href="#" class="address__see-more">Посмотреть на карте</a>
+          <div class="address__api-field  address__api-field--mobile  address__api-field--4">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A14f8c9f965e9a73e98a70b93ce7ed6254c2f257ebf91b7b49925269ac8a81f8f&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+          </div>
+          <div class="address__call-button-field  address__call-button-field--mobile">
+            <button class="address__call-button  address__call-button--4">Записаться на ремонт</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="comments" id="comments-y">
+    <div class="comments__wrapper">
+      <h2 class="comments__title">Честные отзывы наших клиентов</h2>
+      <div id="vk_comments"></div>
+      <script type="text/javascript">VK.Widgets.Comments("vk_comments", {limit: 5, attach: "*"});</script>
+    </div>
+  </section>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <h2 class="page-footer__title visually-hidden">Remont Express footer</h2>
+      <div class="page-footer__address-field">
+        <h3 class="page-footer__address-title">Сервис-центры MobileExpress</h3>
+        <ul class="page-footer__address-list">
+          <li class="page-footer__address-item">&mdash; ул. Широтная, д.80, ТЦ Широтный</li>
+          <li class="page-footer__address-item">&mdash; ул. Пермякова, 82 корп.1</li>
+          <li class="page-footer__address-item">&mdash; ул. Пермякова, 50Б, 1 этаж ТЦ Солнечный</li>
+          <li class="page-footer__address-item">&mdash; ул.Пржевальского 42а</li>
+        </ul>
+        <h3 class="page-footer__address-title">Телефон:</h3>
+        <ul class="page-footer__address-list">
+          <li class="page-footer__address-item">&mdash; <a class="page-footer__address-tel-link  tel-for-ringo roistat-phone" href="tel:+73452662181" onclick="yaCounter45511323.reachGoal('phone_link'); dataLayer.push({'event': 'phone_link'}); return true;">+7 (3452) 66-21-81</a></li>
+        </ul>
+        <a class="page-footer__address-conf-link" href="/confid.html" target="_blank">Политика конфиденциальности</a>
+      </div>
+      <ul class="page-footer__nav-1-list">
+        <li class="page-footer__nav-1-item"><a href="#garanty-y" class="page-footer__nav-1-link">Гарантия</a></li>
+        <li class="page-footer__nav-1-item"><a href="#cost-y" class="page-footer__nav-1-link">Стоимость</a></li>
+        <li class="page-footer__nav-1-item"><a href="#stages-y" class="page-footer__nav-1-link">Порядок работы</a></li>
+        <li class="page-footer__nav-1-item"><a href="#departure-y" class="page-footer__nav-1-link">Выездной ремонт</a></li>
+      </ul>
+      <ul class="page-footer__nav-2-list">
+        <li class="page-footer__nav-2-item"><a href="#comments-y" class="page-footer__nav-2-link">Отзывы</a></li>
+        <li class="page-footer__nav-2-item"><a href="#bests-y" class="page-footer__nav-2-link">Наши мастера</a></li>
+        <li class="page-footer__nav-2-item"><a href="#contacts-y" class="page-footer__nav-2-link">Контакты</a></li>
+      </ul>
+      <div class="page-footer__right-field">
+        <a href="#" class="page-footer__right-callback-link">Заказать обратный звонок</a>
+        <a href="tel:+73452662181" class="page-footer__right-tel  tel-for-ringo roistat-phone" onclick="yaCounter45511323.reachGoal('phone_link'); dataLayer.push({'event': 'phone_link'}); return true;">+7 (3452) 66-21-81</a>
+        <div class="page-footer__right-social-field">
+          <span class="page-footer__right-social-txt  page-footer__right-social-txt--1">Присоединяйся</span>
+          <span class="page-footer__right-social-txt  page-footer__right-social-txt--2">Мы в соцсетях</span>
+          <div class="page-footer__right-social-subfield">
+            <a href="https://vk.com/remont_iphone_tyumen72" class="page-footer__right-link  page-footer__right-link--vk" target="_blank"><img src="/img/vk.svg" alt="vk-группа" class="page-footer__right-vk-img"></a>
+            <a href="https://www.instagram.com/mobexpress72/" class="page-footer__right-link  page-footer__right-link--insta" target="_blank"><img src="/img/insta.svg" alt="instagram профиль" class="page-footer__right-insta-img"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <section class="popup-main  popup-main--inactive">
+    <div class="popup-main__wrapper">
+      <button class="popup-main__close-btn"></button>
+      <h2 class="popup-main__title">Мы перезвоним!</h2>
+      <p class="popup-main__description">Оставьте номер и мы обязательно позвоним вам менее, чем за 50 секунд!</p>
+      <form action="mail.php" method="post" class="popup-main__form-field  this_is_my_lead_form  form_lead_stt" id="form-main" name="call-master">
+        <input type="text" class="popup-main__form-input  popup-main__form-input--info  name_lead_stt" name="uname" id="name-field-popup-main" placeholder="Имя">
+        <input type="tel" class="popup-main__form-input  popup-main__form-input--info  phone_lead_stt" name="uphone" id="telephone-field-popup-main"
+          placeholder="Телефон (обязательно)" required>
+		<input type="hidden" name="form_name" value=""/>
+        <input type="submit" class="popup-main__form-input  popup-main__form-input--submit" name="callback-submit" value="Консультация">
+        <div class="popup-main__form-confid-field">
+          <input type="checkbox" class="popup-main__form-confid-checkbox" checked required>
+          <span class="popup-main__form-confid-text">Я согласен с условиями <a href="/confid.html" class="popup-main__form-confid-link" target="_blank">обработки персональных данных</a></span>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="popup-tinkoff  popup-tinkoff--inactive">
+    <div class="popup-tinkoff__wrapper">
+      <div class="popup-tinkoff__logo-field">
+        <img src="/img/tinkoff.png" alt="tinkoff-logo" class="popup-tinkoff__logo-img">
+      </div>
+      <button class="popup-tinkoff__close-btn"></button>
+      <h2 class="popup-tinkoff__title">Кредит предоставляется банком Тинькофф.</h2>
+      <p class="popup-tinkoff__description">Подробнее об условиях кредитования вы можете узнать по телефону <a href="tel:+73452662181" class="popup-tinkoff__tel-link  tel-for-ringo roistat-phone" onclick="yaCounter45511323.reachGoal('phone_link'); dataLayer.push({'event': 'phone_link'}); return true;">+7 (3452) 66-21-81</a> или оставив заявку на обратный звонок.</p>
+      <form action="mail.php" method="post" class="popup-tinkoff__form-field  this_is_my_lead_form  form_lead_stt" id="form-tinkoff" name="call-master">
+        <input type="text" class="popup-tinkoff__form-input  popup-tinkoff__form-input--info  name_lead_stt" name="uname" placeholder="Имя" id="name-field-popup-tinkoff">
+        <input type="tel" class="popup-tinkoff__form-input  popup-tinkoff__form-input--info  phone_lead_stt" name="uphone" id="telephone-field-popup-tinkoff"
+          placeholder="Телефон (обязательно)" required>
+        <input type="text" class="popup-tinkoff__form-input  popup-tinkoff__form-input--info  popup-tinkoff__form-input--tinkoff  param1_lead_stt  visually-hidden" name="utinkoff">
+        <input type="hidden" name="form_name" value="Починка в кредит"/>
+        <input type="submit" class="popup-tinkoff__form-input  popup-tinkoff__form-input--submit" name="callback-submit" value="Консультация">
+        <div class="popup-tinkoff__form-confid-field">
+          <input type="checkbox" class="popup-tinkoff__form-confid-checkbox" checked required>
+          <span class="popup-tinkoff__form-confid-text">Я согласен с условиями <a href="/confid.html" class="popup-tinkoff__form-confid-link" target="_blank">обработки персональных данных</a></span>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="popup-offices  popup-offices--inactive">
+    <div class="popup-offices__wrapper">
+      <button class="popup-offices__close-btn"></button>
+      <h2 class="popup-offices__title">Мы перезвоним!</h2>
+      <p class="popup-offices__description">Оставьте номер и мы обязательно позвоним вам менее, чем за 50 секунд!</p>
+      <span class="popup-offices__address-office" id="address-office"></span>
+      <form action="mail.php" method="post" class="popup-offices__form-field  this_is_my_lead_form  form_lead_stt" id="form-offices" name="call-master">
+        <input type="text" class="popup-offices__form-input  popup-offices__form-input--info  name_lead_stt" name="uname" placeholder="Имя" id="name-field-popup-offices">
+        <input type="tel" class="popup-offices__form-input  popup-offices__form-input--info  phone_lead_stt" name="uphone" id="telephone-field-popup-offices"
+          placeholder="Телефон (обязательно)" required>
+        <input type="text" class="popup-offices__form-input  popup-offices__form-input--info  popup-offices__form-input--offices  param1_lead_stt visually-hidden" name="uoffice">
+		<input type="hidden" name="form_name" value=""/>
+        <input type="submit" class="popup-offices__form-input  popup-offices__form-input--submit" name="callback-submit" value="Консультация">
+        <div class="popup-offices__form-confid-field">
+          <input type="checkbox" class="popup-offices__form-confid-checkbox" checked required>
+          <span class="popup-offices__form-confid-text">Я согласен с условиями <a href="/confid.html" class="popup-offices__form-confid-link" target="_blank">обработки персональных данных</a></span>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="travel-menu">
+    <div class="travel-menu__wrapper">
+      <h2 class="travel-menu__title visually-hidden">Всплывающее главное меню</h2>
+      <ul class="travel-menu__messenger-list">
+        <li class="travel-menu__messenger-item  travel-menu__messenger-item--imessage"><a href="sms:+79963212181" class="travel-menu__messenger-link"><img src="/img/imessage.svg" alt="imessage" class="travel-menu__messenger-img  travel-menu__messenger-img--imessage"></a></li>
+        <li class="travel-menu__messenger-item  travel-menu__messenger-item--telegram"><a href="tg://resolve?domain=Mobile_Express" class="travel-menu__messenger-link"><img src="/img/telegram.svg" alt="telegram" class="travel-menu__messenger-img  travel-menu__messenger-img--telegram"></a></li>
+        <li class="travel-menu__messenger-item  travel-menu__messenger-item--whatsapp"><a href="whatsapp://send?text=Привет!%20Хочу%20починить%20свой%20iдевайс!&phone=+79963212181&abid=+79963212181" class="travel-menu__messenger-link"><img src="/img/whatsapp.svg" alt="whatsapp" class="travel-menu__messenger-img  travel-menu__messenger-img--whatsapp"></a></li>
+      </ul>
+      <ul class="travel-menu__social-list">
+        <li class="travel-menu__social-item"><a href="https://vk.com/remont_iphone_tyumen72" class="travel-menu__social-link" target="_blank"><img src="/img/vk.svg" alt="" class="travel-menu__social-img  travel-menu__social-img--vk"></a></li>
+        <li class="travel-menu__social-item"><a href="https://www.instagram.com/mobexpress72/" class="travel-menu__social-link" target="_blank"><img src="/img/insta.svg" alt="" class="travel-menu__social-img  travel-menu__social-img--insta"></a></li>
+      </ul>
+      <div class="travel-menu__call-field">
+        <a href="tel:+73452662181" class="travel-menu__call-link  tel-for-ringo roistat-phone">+7 (3452) 66-21-81</a>
+        <div class="travel-menu__call-button-field">
+          <button class="travel-menu__call-button">Заказать обратный звонок</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="overlay"></div>
+  <span class="for-vk visually-hidden">A616</span>
+  <span class="for-vk visually-hidden">А616</span>
+  <script type="text/javascript" src="/js/main.js"></script>
+  <script type="text/javascript" src="/js/picturefill.min.js"></script>
+  <!-- BEGIN JIVOSITE CODE  -->
+  <script type='text/javascript'>
+  (function(){ var widget_id = '8XdFU9SUxn';var d=document;var w=window;function l(){
+  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+  <!--  END JIVOSITE CODE -->
+  <!-- CODE FOR leads-telegram.ru --> 
+  <script type="text/javascript">var telegram_leads_code = '03f889d75fdf7a90caaef2d0d18ba357';</script> 
+  <script src="//leads-telegram.ru/js/telegram_leads.min.js"></script>
+  <!-- END CODE FOR leads-telegram.ru -->
+    <!-- ROISTAT BEGIN --> 
+  <script>
+	(function(w, d, s, h, id) {
+		w.roistatProjectId = id; w.roistatHost = h;
+		var p = d.location.protocol == "https:" ? "https://" : "http://";
+		var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init";
+		var js = d.createElement(s); js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+	})(window, document, 'script', 'cloud.roistat.com', '0903a405e01ef6f6eff67ef7d6729fc8');
+	</script>
+  <!-- ROISTAT END -->
+	<!-- BEGIN JIVOSITE INTEGRATION WITH ROISTAT -->
+<script>
+(function(w, d, s, h) {
+    var p = d.location.protocol == "https:" ? "https://" : "http://";
+    var u = "/static/marketplace/JivoSite/script.js";
+    var js = d.createElement(s); js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+    })(window, document, 'script', 'cloud.roistat.com');
+</script>
+<!-- END JIVOSITE INTEGRATION WITH ROISTAT -->
 </body>
+
 </html>
